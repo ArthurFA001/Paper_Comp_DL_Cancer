@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.14)  16 JAN 2026 21:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.14)  16 JAN 2026 22:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -440,7 +440,7 @@ Package pdftex.def Info: Imagenes/Modelo_RNN_Sec.png  used on input line 342.
 
 
 [11 <./Imagenes/Modelo_CNN_Prof.png>]
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 368.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 370.
  (C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
@@ -451,13 +451,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--19
  []
 
 
+
+[13]
 Underfull \hbox (badness 1436) in paragraph at lines 44--47
 []\T1/ppl/m/n/10 M. Mas-simino, F. Mar-torana, S. Stella, S. R. Vi-tale, C. Tomar-chio,
  []
 
 
-
-[13]
 
 [14])
 
@@ -476,9 +476,9 @@ Here is how much of TeX's memory you used:
  39541 multiletter control sequences out of 15000+600000
  659005 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,6n,79p,1891b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,6n,79p,1891b,628s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\artur.ARTUR-LAPTOP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\artur.ARTUR-LAPTOP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.pdf" (15 pages, 3110716 bytes).
+Output written on "c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.pdf" (15 pages, 3110826 bytes).
 PDF statistics:
  344 PDF objects out of 1000 (max. 8388607)
  77 named destinations out of 1000 (max. 500000)
