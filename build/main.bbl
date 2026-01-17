@@ -1,0 +1,145 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{OMS_Cancer_2023_online}
+{Organización Mundial de la Salud},
+  \href{https://www.who.int/news-room/fact-sheets/detail/cancer}{Cáncer}
+  (2023).
+\newline\urlprefix\url{https://www.who.int/news-room/fact-sheets/detail/cancer}
+
+\bibitem{NCI_CancerStats_2025_online}
+{National Cancer Institute},
+  \href{https://www.cancer.gov/about-cancer/understanding/statistics}{Cancer
+  statistics} (2025).
+\newline\urlprefix\url{https://www.cancer.gov/about-cancer/understanding/statistics}
+
+\bibitem{siegel2023cancer}
+R.~L. Siegel, K.~D. Miller, N.~S. Wagle, A.~Jemal, Cancer statistics, 2023.,
+  CA: a cancer journal for clinicians 73~(1) (2023).
+
+\bibitem{dizon2024cancer}
+D.~S. Dizon, A.~H. Kamal, Cancer statistics 2024: All hands on deck., CA: a
+  cancer journal for clinicians 74~(1) (2024).
+
+\bibitem{hanahan2011hallmarks}
+D.~Hanahan, R.~A. Weinberg, Hallmarks of cancer: the next generation, cell
+  144~(5) (2011) 646--674.
+
+\bibitem{zhuang2021multi}
+Y.~Zhuang, H.~Wang, D.~Jiang, Y.~Li, L.~Feng, C.~Tian, M.~Pu, X.~Wang,
+  J.~Zhang, Y.~Hu, et~al., Multi gene mutation signatures in colorectal cancer
+  patients: predict for the diagnosis, pathological classification, staging and
+  prognosis, BMC cancer 21~(1) (2021) 380.
+
+\bibitem{acharya2024comprehensive}
+D.~Acharya, A.~Mukhopadhyay, A comprehensive review of machine learning
+  techniques for multi-omics data integration: challenges and applications in
+  precision oncology, Briefings in functional genomics 23~(5) (2024) 549--560.
+
+\bibitem{massimino2023single}
+M.~Massimino, F.~Martorana, S.~Stella, S.~R. Vitale, C.~Tomarchio, L.~Manzella,
+  P.~Vigneri, Single-cell analysis in the omics era: technologies and
+  applications in cancer, Genes 14~(7) (2023) 1330.
+
+\bibitem{hernandez2024methods}
+E.~Hern{\'a}ndez-Lemus, S.~Ochoa, Methods for multi-omic data integration in
+  cancer research, Frontiers in Genetics 15 (2024) 1425456.
+
+\bibitem{kutlay2021integrative}
+A.~Kutlay, Y.~Aydin~Son, Integrative predictive modeling of metastasis in
+  melanoma cancer based on microrna, mrna, and dna methylation data, Frontiers
+  in Molecular Biosciences 8 (2021) 637355.
+
+\bibitem{libbrecht2015machine}
+M.~W. Libbrecht, W.~S. Noble, Machine learning applications in genetics and
+  genomics, Nature Reviews Genetics 16~(6) (2015) 321--332.
+
+\bibitem{lecun2015deep}
+Y.~LeCun, Y.~Bengio, G.~Hinton, Deep learning, nature 521~(7553) (2015)
+  436--444.
+
+\bibitem{sartori2025comprehensive}
+F.~Sartori, F.~Codic{\`e}, I.~Caranzano, C.~Rollo, G.~Birolo, P.~Fariselli,
+  C.~Pancotti, A comprehensive review of deep learning applications with
+  multi-omics data in cancer research, Genes 16~(6) (2025) 648.
+
+\bibitem{ye2021genomic}
+T.~Ye, S.~Li, Y.~Zhang, Genomic pan-cancer classification using image-based
+  deep learning, Computational and Structural Biotechnology Journal 19 (2021)
+  835--846.
+
+\bibitem{chuang2021convolutional}
+Y.-H. Chuang, S.-H. Huang, T.-M. Hung, X.-Y. Lin, J.-Y. Lee, W.-S. Lai, J.-M.
+  Yang, Convolutional neural network for human cancer types prediction by
+  integrating protein interaction networks and omics data, Scientific reports
+  11~(1) (2021) 20691.
+
+\bibitem{parthasarathy2025novel}
+R.~Parthasarathy, A.~Bhowmik, A novel recurrent neural network framework for
+  prediction and treatment of oncogenic mutation progression, arXiv preprint
+  arXiv:2509.12732 (2025).
+
+\bibitem{barbadilla2025predicting}
+L.~Barbadilla-Mart{\'\i}nez, N.~Klaassen, B.~van Steensel, J.~de~Ridder,
+  Predicting gene expression from dna sequence using deep learning models,
+  Nature Reviews Genetics (2025) 1--15.
+
+\bibitem{jiang2019semi}
+B.~Jiang, Z.~Zhang, D.~Lin, J.~Tang, B.~Luo, Semi-supervised learning with
+  graph learning-convolutional networks, in: Proceedings of the IEEE/CVF
+  conference on computer vision and pattern recognition, 2019, pp.
+  11313--11320.
+
+\bibitem{velickovic2017graph}
+P.~Velickovic, G.~Cucurull, A.~Casanova, A.~Romero, P.~Lio, Y.~Bengio, et~al.,
+  Graph attention networks, stat 1050~(20) (2017) 10--48550.
+
+\bibitem{weinstein2013cancer}
+J.~N. Weinstein, E.~A. Collisson, G.~B. Mills, K.~R. Shaw, B.~A. Ozenberger,
+  K.~Ellrott, I.~Shmulevich, C.~Sander, J.~M. Stuart, The cancer genome atlas
+  pan-cancer analysis project, Nature genetics 45~(10) (2013) 1113--1120.
+
+\bibitem{colaprico2016tcgabiolinks}
+A.~Colaprico, T.~C. Silva, C.~Olsen, L.~Garofano, C.~Cava, D.~Garolini, T.~S.
+  Sabedot, T.~M. Malta, S.~M. Pagnotta, I.~Castiglioni, et~al., Tcgabiolinks:
+  an r/bioconductor package for integrative analysis of tcga data, Nucleic
+  acids research 44~(8) (2016) e71--e71.
+
+\bibitem{alharbi2025comparative}
+F.~Alharbi, A.~Vakanski, B.~Zhang, M.~K. Elbashir, M.~Mohammed, Comparative
+  analysis of multi-omics integration using graph neural networks for cancer
+  classification, IEEE Access (2025).
+
+\bibitem{robinson2010edger}
+M.~D. Robinson, D.~J. McCarthy, G.~K. Smyth, edger: a bioconductor package for
+  differential expression analysis of digital gene expression data,
+  bioinformatics 26~(1) (2010) 139--140.
+
+\bibitem{ritchie2015limma}
+M.~E. Ritchie, B.~Phipson, D.~Wu, Y.~Hu, C.~W. Law, W.~Shi, G.~K. Smyth, limma
+  powers differential expression analyses for rna-sequencing and microarray
+  studies, Nucleic acids research 43~(7) (2015) e47--e47.
+
+\bibitem{tibshirani1996regression}
+R.~Tibshirani, Regression shrinkage and selection via the lasso, Journal of the
+  Royal Statistical Society Series B: Statistical Methodology 58~(1) (1996)
+  267--288.
+
+\bibitem{jeon2025investigating}
+S.~Jeon, H.~R. Jun, J.-Y. Lee, C.~O. Sung, S.-M. Chun, Investigating
+  mirna-driven dna methylation: Statistical evidence of gene-specific
+  modulation, Science Progress 108~(3) (2025) 00368504251370988.
+
+\bibitem{fabbri2010epigenetics}
+M.~Fabbri, G.~A. Calin, Epigenetics and mirnas in human cancer, Advances in
+  genetics 70 (2010) 87--99.
+
+\bibitem{lecun2002gradient}
+Y.~LeCun, L.~Bottou, Y.~Bengio, P.~Haffner, Gradient-based learning applied to
+  document recognition, Proceedings of the IEEE 86~(11) (2002) 2278--2324.
+
+\end{thebibliography}
