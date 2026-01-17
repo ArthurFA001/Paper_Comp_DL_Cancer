@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.14)  16 JAN 2026 21:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.14)  16 JAN 2026 21:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/artur.ARTUR-LAPTOP/OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico/Documentos/Doctorado/5° Semestre/Articulo_Comparativ_DL/main.tex"
-(c:/Users/artur.ARTUR-LAPTOP/OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico/Documentos/Doctorado/5° Semestre/Articulo_Comparativ_DL/main.tex
+**"c:/Users/artur.ARTUR-LAPTOP/OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico/Documentos/Doctorado/5° Semestre/Paper_Comp_DL_Cancer/main.tex"
+(c:/Users/artur.ARTUR-LAPTOP/OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico/Documentos/Doctorado/5° Semestre/Paper_Comp_DL_Cancer/main.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-11>
 (C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex/latex/elsarticle\elsarticle.cls
@@ -77,7 +77,7 @@ File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 \@enLab=\toks19
 \@sep=\skip51
 \@@sep=\skip52
- (c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.spl) (C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+ (c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.spl) (C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip53
 \bibsep=\skip54
@@ -268,7 +268,7 @@ LaTeX Info: Redefining \] on input line 2950.
 LaTeX Font Info:    Trying to load font information for T1+ppl on input line 62.
  (C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
-) (c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.aux)
+) (c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
@@ -315,7 +315,7 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 62.
- (c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.out) (c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.out)
+ (c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.out) (c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -445,7 +445,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 36
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
 
-[12 <./Imagenes/Modelo_RNN_Sec.png>] (c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.bbl
+[12 <./Imagenes/Modelo_RNN_Sec.png>] (c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 15--19
 \T1/ppl/m/n/10 URL []$\T1/cmtt/m/n/10 https : / / www . cancer . gov / about-[]cancer / understanding /
  []
@@ -461,7 +461,7 @@ Underfull \hbox (badness 1436) in paragraph at lines 44--47
 
 [14])
 
-[15] (c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.aux)
+[15] (c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-11>
@@ -471,14 +471,14 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  11186 strings out of 468149
- 176996 string characters out of 5424790
+ 176958 string characters out of 5424790
  573011 words of memory out of 5000000
  39541 multiletter control sequences out of 15000+600000
  659005 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,6n,79p,1893b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,6n,79p,1891b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\artur.ARTUR-LAPTOP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\artur.ARTUR-LAPTOP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.pdf" (15 pages, 3110716 bytes).
+Output written on "c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.pdf" (15 pages, 3110716 bytes).
 PDF statistics:
  344 PDF objects out of 1000 (max. 8388607)
  77 named destinations out of 1000 (max. 500000)

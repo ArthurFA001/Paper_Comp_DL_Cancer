@@ -1,7 +1,7 @@
-PWD c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL
+PWD c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\main.tex
-OUTPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.log
+INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\main.tex
+OUTPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.log
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\elsarticle\elsarticle.cls
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\elsarticle\elsarticle.cls
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
@@ -37,12 +37,12 @@ INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\graphi
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.spl
-INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.spl
-INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.spl
+INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.spl
+INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.spl
+INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.spl
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\natbib\natbib.sty
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\natbib\natbib.sty
-OUTPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.spl
+OUTPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.spl
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\mathpazo.sty
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\mathpazo.sty
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\parskip\parskip.sty
@@ -114,10 +114,10 @@ INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\psnfss
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1ppl.fd
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1ppl.fd
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8t.tfm
-INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.aux
-INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.aux
-INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.aux
-OUTPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.aux
+INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.aux
+INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.aux
+INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.aux
+OUTPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.aux
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -128,14 +128,14 @@ INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\grfext
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.out
-INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.out
-INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.out
-INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.out
-OUTPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.pdf
-INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.out
-INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.out
-OUTPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.out
+INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.out
+INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.out
+INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.out
+INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.out
+OUTPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.pdf
+INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.out
+INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.out
+OUTPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.out
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplb8t.tfm
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplri8t.tfm
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8t.tfm
@@ -287,13 +287,13 @@ INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\psnfss
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ppl.fd
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8c.tfm
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplr8c.vf
-INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.bbl
-INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.bbl
-INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.bbl
+INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.bbl
+INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.bbl
+INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.bbl
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1000.tfm
-INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.aux
-INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.out
-INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Articulo_Comparativ_DL\build\main.out
+INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.aux
+INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.out
+INPUT c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.out
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
 INPUT C:\Users\artur.ARTUR-LAPTOP\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
