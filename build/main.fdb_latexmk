@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex build/main"] 1768622617.61872 "build/main.aux" "build/main.bbl" "build/main" 1768622847.4213 0
+["bibtex build/main"] 1768622617.61872 "build/main.aux" "build/main.bbl" "build/main" 1768623073.13747 0
   "./Blibliografia.bib" 1768592578 9206 96988de802924df87691a972056b138f ""
   "C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/bibtex/bst/elsarticle/elsarticle-num.bst" 1737286288 29462 3b2a1af2ce1e224a3b46ee048ffd4b98 ""
-  "build/main.aux" 1768622846 7965 41408909e1eea081eac7928120be7c17 "pdflatex"
+  "build/main.aux" 1768623071 7965 41408909e1eea081eac7928120be7c17 "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1768622829.50196 "c:/Users/artur.ARTUR-LAPTOP/OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico/Documentos/Doctorado/5° Semestre/Paper_Comp_DL_Cancer/main.tex" "build/main.pdf" "main" 1768622847.42266 0
+["pdflatex"] 1768623055.6181 "c:/Users/artur.ARTUR-LAPTOP/OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico/Documentos/Doctorado/5° Semestre/Paper_Comp_DL_Cancer/main.tex" "build/main.pdf" "main" 1768623073.13892 0
   "C:/Users/artur.ARTUR-LAPTOP/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1764276543 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/artur.ARTUR-LAPTOP/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk" 1762916887 20028 508b503535f37358184a7e97bcd940f8 ""
   "C:/Users/artur.ARTUR-LAPTOP/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1768592806 11548 8584388f097a46afc55f67dc7ecb6127 ""
@@ -118,12 +118,12 @@
   "Imagenes/Muestras_TCGA.png" 1768592578 189978 aa43f6498bd985d363aff8f66799b43b ""
   "Imagenes/Proc_datos.png" 1768592578 909736 0792e8d8674c6f0a3a1c1e8f5e3bc290 ""
   "Imagenes/muestrasxgenes.png" 1768592578 510731 0f379d6f9080eb75278d3f86845bc676 ""
-  "build/main.aux" 1768622846 7965 41408909e1eea081eac7928120be7c17 "pdflatex"
+  "build/main.aux" 1768623071 7965 41408909e1eea081eac7928120be7c17 "pdflatex"
   "build/main.bbl" 1768622618 6437 fd196fda1974456be785d212619a8449 "bibtex build/main"
-  "build/main.out" 1768622846 4193 653285d97fe08797735e05d0188bbcb0 "pdflatex"
-  "build/main.spl" 1768622830 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "c:/Users/artur.ARTUR-LAPTOP/OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico/Documentos/Doctorado/5° Semestre/Paper_Comp_DL_Cancer/main.tex" 1768622828 36335 bfcb19d4a0532d5c5d3d048772edae61 ""
-  "main.tex" 1768622828 36335 bfcb19d4a0532d5c5d3d048772edae61 ""
+  "build/main.out" 1768623071 4193 653285d97fe08797735e05d0188bbcb0 "pdflatex"
+  "build/main.spl" 1768623056 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "c:/Users/artur.ARTUR-LAPTOP/OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico/Documentos/Doctorado/5° Semestre/Paper_Comp_DL_Cancer/main.tex" 1768623043 36303 f91426d0e62b77d5e9c106145e191792 ""
+  "main.tex" 1768623043 36303 f91426d0e62b77d5e9c106145e191792 ""
   (generated)
   "build/main.aux"
   "build/main.log"
