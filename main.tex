@@ -271,7 +271,7 @@ Para la implementación de las Redes Neuronales Convolucionales (CNN), el vector
 
 En la evaluación de los modelos recurrentes mediante la integración de datos multiómicos, se utilizaron dos estrategias para la secuenciación de los datos:
 
-\textit{}{A. Secuenciación de características globales}
+\textit{A. Secuenciación de características globales}
 
 Los datos se tomaron de la matriz y reformateados en un vector concatenado de $N =$ 2,794 características como una secuencia temporal $S_{global} = \{f_1, f_2, ..., f_N\}$. El vector se introdujo al modelo paso a paso. Esta representación asume una dependencia ordinal entre las características individuales. Este enfoque evalúa la capacidad bruta de la RNN para memorizar dependencias de largo alcance en series ruidosas.
 
@@ -304,11 +304,11 @@ Se diseñaron e implementaron tres arquitecturas de redes neuronales distintas p
 
 \subsubsection{Modelos convolucionales}
 
-Para evaluar el rendimiento del aprendizaje de características espaciales sobre lo mapas multiómicos artificiales ($53 \times 53$), se implementaron dos modelos distintos, el primero una variante del modelo convolucional LeNet-5 y el segundo una arquitectura profunda personalizada con normalización por lotes. Ambas modelos buscan identificar patrones locales en la matriz reordenada, aunque con diferentes profundidades y funciones de activación.
+Para evaluar el rendimiento del aprendizaje de características espaciales sobre lo mapas multiómicos artificiales ($53 \times 53$), se implementaron dos modelos distintos, el primero una variante del modelo convolucional LeNet-5 y el segundo una arquitectura profunda con normalización por lotes. Ambas modelos buscan identificar patrones locales en la matriz reordenada, aunque con diferentes profundidades y funciones de activación.
 
 \textit{A. Variante de LeNet-5}
 
-Este modelo se adaptó de la clásica LeNet-5, que su propósito original para el que se diseñó es para el reconocimiento de dígitos \cite{lecun2002gradient}, para procesar la complejidad de los datos omicos. El modelo consta de dos bloques convolucionales secuenciales que funcionan como capas de extracción, el primer bloque con 6 filtros ($5 \times 5$) y el segundo con 16 filtros ($5 \times 5$) la configuracion se muestra en la Figura \ref{fig:LeNetMod}. La función de activación utilizada fue la tangente (tanh) y reducción de dimensionalidad Average Pooling ($2 \times 2$), preservando el flujo de información promedio de los vecindarios de características. Seguido de estos bloques se aplanó la salida y se sometió a un clasificador denso, dada la alta dimensionalidad de los datos de entrada, se utilizaron 4 capas ocultas consecutivas de 1000, 500, 120 y 84 neuronas, todas con activación tanh y por último una capa de clasificación con activación Softmax. Entre cada capa de convolución y densa se aplicó Dropout con una tasa de 0.1 para mitigar el sobreajuste, el optimizador usado fue Adam y un tamaño de lote (batch size) de 128.
+Este modelo se adaptó de la clásica LeNet-5, que su propósito original para el que se diseñó es para el reconocimiento de dígitos \cite{lecun2002gradient}, para procesar la complejidad de los datos omicos. El modelo consta de dos bloques convolucionales secuenciales que funcionan como capas de extracción, el primer bloque con 6 filtros ($5 \times 5$) y el segundo con 16 filtros ($5 \times 5$) la configuracion se muestra en la Figura \ref{fig:LeNetMod}. La función de activación utilizada fue la tangente hiperbólica (tanh) y reducción de dimensionalidad Average Pooling ($2 \times 2$), preservando el flujo de información promedio de los vecindarios de características. Seguido de estos bloques se aplanó la salida y se sometió a un clasificador denso, dada la alta dimensionalidad de los datos de entrada, se utilizaron 4 capas ocultas consecutivas de 1000, 500, 120 y 84 neuronas, todas con activación tanh y por último una capa de clasificación con activación Softmax. Entre cada capa de convolución y densa se aplicó Dropout con una tasa de 0.1 para mitigar el sobreajuste, el optimizador usado fue Adam y un tamaño de lote (batch size) de 128.
 
 \begin{figure}[h]
     \centering
@@ -346,7 +346,14 @@ Como primera estrategia, se implementó una modelo con arquitectura profunda bas
 
 \textit{Modelo RNN Multimodal Jerárquico}
 
-Por otro lado, para mitigar los problemas de dispersión de señal en secuencias largas, se implementó una variante jerárquica optimizada denominada OmicsRNN. A diferencia del modelo anterior, este modelo segrega inicialmente los datos en sus tres modalidades constitutivas (ARNm, miARN y metilación), en vectores latentes de 512 dimensiones mediante proyecciones densas independientes (Lineal $\rightarrow$ Batch Normalization $\rightarrow$ ReLU $\rightarrow$ Dropout). Esto permite al modelo aprender representaciones específicas para cada ómica antes de la integración. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Imagenes/Modelo_GRU_BI.png}
+    \caption{Arquitectura de modelo RNN jerárquico para clasificación de 32 tipos de cáncer}
+    \label{fig:Modelo_GRU_BI}
+\end{figure}
+
+Por otro lado, para mitigar los problemas de dispersión de señal en secuencias largas, se implementó una variante jerárquica optimizada denominada OmicsRNN (Figura \ref{fig:Modelo_GRU_BI}). A diferencia del modelo anterior, este modelo segrega inicialmente los datos en sus tres modalidades constitutivas (ARNm, miARN y metilación), en vectores latentes de 512 dimensiones mediante proyecciones densas independientes (Lineal $\rightarrow$ Batch Normalization $\rightarrow$ ReLU $\rightarrow$ Dropout). Esto permite al modelo aprender representaciones específicas para cada ómica antes de la integración. 
 
 Posteriormente, estos embeddings latentes se organizaron en una secuencia corta de tres pasos ($T=3$) siguiendo el flujo de regulación biológica (Metilación $\rightarrow$ miARN $\rightarrow$ ARNm). La secuencia compacta alimenta una Unidad Recurrente Con Puerta (GRU) bidireccional de 2 capas con 256 unidades ocultas. La bidireccionalidad es crucial, ya que permite al modelo capturar tanto la regulación hacia adelante como las dependencias inversas o de retroalimentación biológica. Finalmente, el estado oculto concatenado de la GRU se procesa mediante un clasificador de una única capa densa de 128 neuronas con activación ReLU y regularización Droput.
 
@@ -354,7 +361,12 @@ Posteriormente, estos embeddings latentes se organizaron en una secuencia corta 
 
 \subsection{Modelos GNN}
 
-Para evaluar la capacidad de las GNN en la integración de datos multiómicos, se implementaron tres arquitecturas distintas: una basada en Redes Neuronales Convolucionales de Grafos (GCN), otra en Redes de Atención de Grafos (GAT) y una tercera en Redes de Transformadores de Grafos (GTN).
+Para explotar la topología relacional definida por la matriz de correlación de Pearson, se implementó un marco de modelado basado en grafos utilizando la biblioteca Pytorch Geometric. El grafo de entrada, definido por la matriz de características $X$ y la lista de aristas (edge index), fue procesado por tres arquitecturas distintas: una basada en atención jerárquica, una basada en transformadores y una convolucional profunda, esto para evaluar el impacto de diferentes mecanismos de agregación de vecindad (message passing) en la tarea de clasificación multiclase.
+
+\textit{A. GAT (Graph Attention Network)}
+
+Las GAT se implementó con cuatro capas diseñadas con un esquema de atención piramidal, diseñada para gestionar la alta complejidad de las interacciones genéticas. La primera capa proyecta las características de entrada a un espacio latente de 1024 dimensiones distribuidas en 8 cabezales de atención, generando un intermedio masivo de 8,192 características por nodo. Para canalizar esta información, las capas subsiguientes reducen progresivamente la dimensionalidad (512 características $\times$ 4 cabezales) y la tercera a 512 dimensiones (256 características $\times$ 2 cabezales). Finalmente, la última capa consolida la información en un único cabezal que mapea directamente a las 32 dimensiones de salida correspondiente a las clases objetivo. Este flujo se estabiliza mediante normalización por lotes aplicada a las salidas de alta dimensionalidad antes de la activación LeakyReLU y Dropout del 0.1.
+
 
 
 %\begin{itemize}
