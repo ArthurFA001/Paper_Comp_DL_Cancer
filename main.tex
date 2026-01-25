@@ -365,8 +365,22 @@ Para explotar la topología relacional definida por la matriz de correlación de
 
 \textit{A. GAT (Graph Attention Network)}
 
-Las GAT se implementó con cuatro capas diseñadas con un esquema de atención piramidal, diseñada para gestionar la alta complejidad de las interacciones genéticas. La primera capa proyecta las características de entrada a un espacio latente de 1024 dimensiones distribuidas en 8 cabezales de atención, generando un intermedio masivo de 8,192 características por nodo. Para canalizar esta información, las capas subsiguientes reducen progresivamente la dimensionalidad (512 características $\times$ 4 cabezales) y la tercera a 512 dimensiones (256 características $\times$ 2 cabezales). Finalmente, la última capa consolida la información en un único cabezal que mapea directamente a las 32 dimensiones de salida correspondiente a las clases objetivo. Este flujo se estabiliza mediante normalización por lotes aplicada a las salidas de alta dimensionalidad antes de la activación LeakyReLU y Dropout del 0.1.
+La GAT se implementó con cuatro capas diseñadas con un esquema de atención piramidal, diseñada para gestionar la alta complejidad de las interacciones genéticas. La primera capa proyecta las características de entrada a un espacio latente de 1024 dimensiones distribuidas en 8 cabezales de atención, generando un intermedio masivo de 8,192 características por nodo. Para canalizar esta información, las capas subsiguientes reducen progresivamente la dimensionalidad (512 características $\times$ 4 cabezales) y la tercera a 512 dimensiones (256 características $\times$ 2 cabezales). Finalmente, la última capa consolida la información en un único cabezal que mapea directamente a las 32 dimensiones de salida correspondiente a las clases objetivo. Este flujo se estabiliza mediante normalización por lotes aplicada a las salidas de alta dimensionalidad antes de la activación LeakyReLU y Dropout del 0.1.
 
+\textit{B. GTN (Graph Transformer Network)}
+
+Para capturar dependencias globales complejas, se evaluó una arquitectura basada en Graph Transformer que mantiene una densidad de características constante a través de sus capas profundas. El modelo consta de tres bloques TransformerConv consecutivos, configuradas cada uno con 6 cabezales de atención y 80 canales por cabezal, resultando en una representación vectorial constante de 480 dimensiones por nodo a lo largo de la red. Esta preservación del ancho de banda permite al modelo refinar las representaciones sin pérdida de información prematura. La capa final transforma este vector de 480 dimensiones mediante un único cabezal de atención hacia los 32 logits de clasificación, Dado el alto número de parámetros implicados en los bloques de atención densa, se aplicó una tasa de Dropout del 0.5 junto con activaciones LeakyReLU para maximizar la capacidad de generalización.
+
+\textit{C. GCN (Graph Convolutional Network)}
+
+Se diseñó una GCN de 4 capas con una arquitectura de compresión piramidal (Figura \ref{fig:Modelo_GCN}). A diferencia de los modelos de ancho constante, esta variante fuerza al modelo a sintetizar  las características más relevantes reduciendo la dimensionalidad del espacio latente en cada salto del grafo. La primera  capa convolucional proyecta el vector de entrada a un espacio oculto de 600 dimensiones. Las capas subsiguientes aplican una reducción progresiva a 300 y 150 dimensiones respectivamente, obligando a la red a aprender representaciones cada vez más abstractas y compactas de los vecindarios biológicos. Finalmente, la cuarta capa proyecta el vector de 150 características hacia las 32 clases de salida. Cada etapa intermedia utiliza la función de activación ReLU y una regularización por Dropout del 0.3 para mitigar el sobreajuste durante la compresión de características.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Imagenes/Modelo_GCN.png}
+    \caption{Flujo de procesamiento desde la entrada multi-ómica ($N=2,794$) hasta la clasificación de 32 tipos de cáncer. Los bloques representan la reducción jerárquica de dimensionalidad ($600 \rightarrow 300 \rightarrow 150 \rightarrow 32$), diseñada para la síntesis de representaciones latentes abstractas. Se indican las capas de convolución gráfica (bloques blancos) y la capa de salida (esferas amarillas), integrando regularización Dropout y activaciones ReLU en cada etapa de compresión.}
+    \label{fig:Modelo_GCN}
+\end{figure}
 
 
 %\begin{itemize}
