@@ -1,16 +1,16 @@
 # Fdb version 4
-["bibtex build/main"] 1769532867.91967 "build/main.aux" "build/main.bbl" "build/main" 1769532890.57995 0
+["bibtex build/main"] 1769532867.91967 "build/main.aux" "build/main.bbl" "build/main" 1769536984.72326 0
   "./Blibliografia.bib" 1769532553.27756 9464 ead2cef09a26658cebe988d9cece7d3f ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/elsarticle/elsarticle-num.bst" 1606256092 29462 43db4fe246825ec69ed81b2463c17f04 ""
-  "build/main.aux" 1769532890.34734 16439 d7d3726eee8dc81ceedf6eba7840017b "pdflatex"
+  "build/main.aux" 1769536984.52307 16439 d7d3726eee8dc81ceedf6eba7840017b "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1769532867.96225 "/home/arthur1/Escritorio/Paper_Comp_DL_Cancer/main.tex" "build/main.pdf" "main" 1769532890.58047 0
+["pdflatex"] 1769536962.18238 "/home/arthur1/Escritorio/Paper_Comp_DL_Cancer/main.tex" "build/main.pdf" "main" 1769536984.72366 0
   "/etc/texmf/web2c/texmf.cnf" 1748031927.46088 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/arthur1/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1769532844.91483 11524 9765a17d888c59549b536e891f27f62f ""
-  "/home/arthur1/Escritorio/Paper_Comp_DL_Cancer/main.tex" 1769532553.40756 46758 1d05f7b6cd597bcdbd2004cc5f829a0a ""
+  "/home/arthur1/Escritorio/Paper_Comp_DL_Cancer/main.tex" 1769536961.70735 46806 602094897c385537b0ba8ab2584ec85e ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136768653 1616 371d1ee60c04b008c8fd760060cd34f1 ""
@@ -126,11 +126,11 @@
   "Imagenes/Muestras_TCGA.png" 1769532553.34356 189978 adcf2f13b6fb782d5e427bf273c7c5e0 ""
   "Imagenes/Proc_datos.png" 1769532553.34956 909736 a39fdef97635f260c911667cdfc188fd ""
   "Imagenes/muestrasxgenes.png" 1769532553.35356 510731 79ca0a709e6889517d4844426010f7c5 ""
-  "build/main.aux" 1769532890.34734 16439 d7d3726eee8dc81ceedf6eba7840017b "pdflatex"
+  "build/main.aux" 1769536984.52307 16439 d7d3726eee8dc81ceedf6eba7840017b "pdflatex"
   "build/main.bbl" 1769532867.9528 6340 0a66082e1370d9891d2bf3e37e17f1cd "bibtex build/main"
-  "build/main.out" 1769532890.34934 5008 a34792996ae5a76a851d0693251b2b92 "pdflatex"
-  "build/main.spl" 1769532868.20762 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1769532553.40756 46758 1d05f7b6cd597bcdbd2004cc5f829a0a ""
+  "build/main.out" 1769536984.52507 5008 a34792996ae5a76a851d0693251b2b92 "pdflatex"
+  "build/main.spl" 1769536962.43434 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1769536961.70735 46806 602094897c385537b0ba8ab2584ec85e ""
   (generated)
   "build/main.aux"
   "build/main.log"
