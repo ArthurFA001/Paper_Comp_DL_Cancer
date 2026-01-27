@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.14)  22 JAN 2026 21:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.14)  26 JAN 2026 23:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -380,37 +380,32 @@ LaTeX Info: Symbol \textasciidieresis not provided by
 [2]
 
 [3]
-<Imagenes/Muestras_TCGA.png, id=149, 529.98pt x 270.465pt>
+<Imagenes/Muestras_TCGA.png, id=165, 529.98pt x 270.465pt>
 File: Imagenes/Muestras_TCGA.png Graphic file (type png)
 <use Imagenes/Muestras_TCGA.png>
-Package pdftex.def Info: Imagenes/Muestras_TCGA.png  used on input line 202.
+Package pdftex.def Info: Imagenes/Muestras_TCGA.png  used on input line 204.
 (pdftex.def)             Requested size: 345.0pt x 176.06429pt.
-<Imagenes/muestrasxgenes.png, id=152, 805.92pt x 381.717pt>
+<Imagenes/muestrasxgenes.png, id=168, 805.92pt x 381.717pt>
 File: Imagenes/muestrasxgenes.png Graphic file (type png)
 <use Imagenes/muestrasxgenes.png>
-Package pdftex.def Info: Imagenes/muestrasxgenes.png  used on input line 212.
+Package pdftex.def Info: Imagenes/muestrasxgenes.png  used on input line 214.
 (pdftex.def)             Requested size: 345.0pt x 163.40704pt.
 
 
 [4 <./Imagenes/Muestras_TCGA.png>]
-<Imagenes/Proc_datos.png, id=167, 8674.4075pt x 3449.88875pt>
+<Imagenes/Proc_datos.png, id=178, 8674.4075pt x 3449.88875pt>
 File: Imagenes/Proc_datos.png Graphic file (type png)
 <use Imagenes/Proc_datos.png>
 Package pdftex.def Info: Imagenes/Proc_datos.png  used on input line 225.
 (pdftex.def)             Requested size: 345.0pt x 137.18243pt.
 
 
-[5 <./Imagenes/muestrasxgenes.png>]
-Overfull \hbox (1.02632pt too wide) in paragraph at lines 240--241
-\T1/ppl/m/n/10 rando as� que las car-ac-ter�s-ti-cas se-lec-cionadas rep-re-sen-taron cam-bios epi-gen�ti-
- []
+[5 <./Imagenes/muestrasxgenes.png> <./Imagenes/Proc_datos.png>]
 
-
-
-[6 <./Imagenes/Proc_datos.png>]
+[6]
 
 [7]
-Overfull \hbox (12.14078pt too wide) in paragraph at lines 276--277
+Overfull \hbox (12.14078pt too wide) in paragraph at lines 279--280
 \T1/ppl/m/n/10 de $\OML/zplm/m/it/10 N \OT1/zplm/m/n/10 =$ \T1/ppl/m/n/10 2,794 car-ac-ter�s-ti-cas como una se-cuen-cia tem-po-ral $\OML/zplm/m/it/10 S[] \OT1/zplm/m/n/10 = \OMS/zplm/m/n/10 f\OML/zplm/m/it/10 f[]\OT1/ppl/m/n/10 , \OML/zplm/m/it/10 f[]\OT1/ppl/m/n/10 , ..., \OML/zplm/m/it/10 f[]\OMS/zplm/m/n/10 g$\T1/ppl/m/n/10 .
  []
 
@@ -419,88 +414,123 @@ Overfull \hbox (12.14078pt too wide) in paragraph at lines 276--277
 [8]
 
 [9]
-<Imagenes/Modelo_LeNetMod.png, id=209, 8381.3125pt x 4601.19pt>
+<Imagenes/Modelo_LeNetMod.png, id=225, 8381.3125pt x 4601.19pt>
 File: Imagenes/Modelo_LeNetMod.png Graphic file (type png)
 <use Imagenes/Modelo_LeNetMod.png>
-Package pdftex.def Info: Imagenes/Modelo_LeNetMod.png  used on input line 315.
+Package pdftex.def Info: Imagenes/Modelo_LeNetMod.png  used on input line 318.
 (pdftex.def)             Requested size: 310.4979pt x 170.39583pt.
 
 
 [10 <./Imagenes/Modelo_LeNetMod.png>]
-<Imagenes/Modelo_CNN_Prof.png, id=220, 8807.90625pt x 4555.0175pt>
+<Imagenes/Modelo_CNN_Prof.png, id=235, 8807.90625pt x 4555.0175pt>
 File: Imagenes/Modelo_CNN_Prof.png Graphic file (type png)
 <use Imagenes/Modelo_CNN_Prof.png>
-Package pdftex.def Info: Imagenes/Modelo_CNN_Prof.png  used on input line 326.
+Package pdftex.def Info: Imagenes/Modelo_CNN_Prof.png  used on input line 329.
 (pdftex.def)             Requested size: 310.4979pt x 160.55396pt.
 
 
 [11 <./Imagenes/Modelo_CNN_Prof.png>]
-<Imagenes/Modelo_RNN_Sec.png, id=228, 6709.065pt x 3729.935pt>
+<Imagenes/Modelo_RNN_Sec.png, id=243, 6709.065pt x 3729.935pt>
 File: Imagenes/Modelo_RNN_Sec.png Graphic file (type png)
 <use Imagenes/Modelo_RNN_Sec.png>
-Package pdftex.def Info: Imagenes/Modelo_RNN_Sec.png  used on input line 342.
+Package pdftex.def Info: Imagenes/Modelo_RNN_Sec.png  used on input line 345.
 (pdftex.def)             Requested size: 310.4979pt x 172.62062pt.
-<Imagenes/Modelo_GRU_BI.png, id=229, 8494.73625pt x 4215.75pt>
+<Imagenes/Modelo_GRU_BI.png, id=244, 8494.73625pt x 4215.75pt>
 File: Imagenes/Modelo_GRU_BI.png Graphic file (type png)
 <use Imagenes/Modelo_GRU_BI.png>
-Package pdftex.def Info: Imagenes/Modelo_GRU_BI.png  used on input line 351.
+Package pdftex.def Info: Imagenes/Modelo_GRU_BI.png  used on input line 354.
 (pdftex.def)             Requested size: 310.4979pt x 154.06335pt.
 
 
-[12 <./Imagenes/Modelo_RNN_Sec.png> <./Imagenes/Modelo_GRU_BI.png>]
-Overfull \hbox (1.06677pt too wide) in paragraph at lines 372--373
-\T1/ppl/m/n/10 Trans-former-Conv con-sec-u-tivos, con-fig-u-radas cada uno con 6 cabeza-les de aten-
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[13]
-<Imagenes/Modelo_GCN.png, id=244, 7001.15625pt x 3148.76375pt>
+[12 <./Imagenes/Modelo_RNN_Sec.png>]
+
+[13 <./Imagenes/Modelo_GRU_BI.png>]
+<Imagenes/Modelo_GCN.png, id=261, 7001.15625pt x 3148.76375pt>
 File: Imagenes/Modelo_GCN.png Graphic file (type png)
 <use Imagenes/Modelo_GCN.png>
-Package pdftex.def Info: Imagenes/Modelo_GCN.png  used on input line 380.
+Package pdftex.def Info: Imagenes/Modelo_GCN.png  used on input line 375.
 (pdftex.def)             Requested size: 310.4979pt x 139.62227pt.
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 396.
- (C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
+<Imagenes/Modelo_GAT.png, id=263, 7043.31375pt x 3148.76375pt>
+File: Imagenes/Modelo_GAT.png Graphic file (type png)
+<use Imagenes/Modelo_GAT.png>
+Package pdftex.def Info: Imagenes/Modelo_GAT.png  used on input line 386.
+(pdftex.def)             Requested size: 310.4979pt x 138.80548pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[14 <./Imagenes/Modelo_GCN.png>]
+<Imagenes/Modelo_GTN.png, id=271, 7792.11125pt x 3148.76375pt>
+File: Imagenes/Modelo_GTN.png Graphic file (type png)
+<use Imagenes/Modelo_GTN.png>
+Package pdftex.def Info: Imagenes/Modelo_GTN.png  used on input line 399.
+(pdftex.def)             Requested size: 310.4979pt x 125.44864pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (3.06595pt too wide) in paragraph at lines 417--418
+[]\T1/ppl/m/n/10 Todos los mod-e-los y ex-per-i-men-tos fueron im-ple-men-ta-dos uti-lizando el lenguaje
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 419.
+(C:\Users\artur.ARTUR-LAPTOP\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
 
-[14 <./Imagenes/Modelo_GCN.png>] (c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.bbl
+[15 <./Imagenes/Modelo_GAT.png>]
+
+Package natbib Warning: Citation `chicco2020advantages' on page 16 undefined on input line 427.
+
+
+
+[16 <./Imagenes/Modelo_GTN.png>] (c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 15--19
 \T1/ppl/m/n/10 URL []$\T1/cmtt/m/n/10 https : / / www . cancer . gov / about-[]cancer / understanding /
  []
 
 
+
+[17]
 Underfull \hbox (badness 1436) in paragraph at lines 44--47
 []\T1/ppl/m/n/10 M. Mas-simino, F. Mar-torana, S. Stella, S. R. Vi-tale, C. Tomar-chio,
  []
 
 
 
-[15]
+[18])
 
-[16])
+Package natbib Warning: There were undefined citations.
 
-[17] (c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.aux)
+
+
+[19] (c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-11>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 653285D97FE08797735E05D0188BBCB0;4193.
+(rerunfilecheck)             Checksum: A34792996AE5A76A851D0693251B2B92;5008.
  ) 
 Here is how much of TeX's memory you used:
- 11211 strings out of 468149
- 177490 string characters out of 5424790
- 573600 words of memory out of 5000000
- 39557 multiletter control sequences out of 15000+600000
+ 11243 strings out of 468149
+ 178226 string characters out of 5424790
+ 576489 words of memory out of 5000000
+ 39580 multiletter control sequences out of 15000+600000
  660432 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,6n,79p,1891b,636s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,6n,79p,1891b,628s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\artur.ARTUR-LAPTOP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\artur.ARTUR-LAPTOP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/artur.ARTUR-LAPTOP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.pdf" (17 pages, 4055467 bytes).
+Output written on "c:\Users\artur.ARTUR-LAPTOP\OneDrive - Tecnológico Nacional de México - Centro Nacional de Investigación y Desarrollo Tecnológico\Documentos\Doctorado\5° Semestre\Paper_Comp_DL_Cancer\build\main.pdf" (19 pages, 4801292 bytes).
 PDF statistics:
- 361 PDF objects out of 1000 (max. 8388607)
- 81 named destinations out of 1000 (max. 500000)
- 209 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 397 PDF objects out of 1000 (max. 8388607)
+ 90 named destinations out of 1000 (max. 500000)
+ 251 words of extra memory for PDF output out of 10000 (max. 10000000)
 

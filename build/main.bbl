@@ -142,4 +142,8 @@ M.~Fabbri, G.~A. Calin, Epigenetics and mirnas in human cancer, Advances in
 Y.~LeCun, L.~Bottou, Y.~Bengio, P.~Haffner, Gradient-based learning applied to
   document recognition, Proceedings of the IEEE 86~(11) (2002) 2278--2324.
 
+\bibitem{johnson2019survey}
+J.~M. Johnson, T.~M. Khoshgoftaar, Survey on deep learning with class
+  imbalance, Journal of big data 6~(1) (2019) 1--54.
+
 \end{thebibliography}

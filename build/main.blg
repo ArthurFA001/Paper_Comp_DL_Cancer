@@ -5,44 +5,46 @@ Reallocating 'name_of_file' (item size: 1) to 15 items.
 The style file: elsarticle-num.bst
 Reallocating 'name_of_file' (item size: 1) to 14 items.
 Database file #1: Blibliografia.bib
-You've used 28 entries,
+Warning--I didn't find a database entry for "chicco2020advantages"
+You've used 29 entries,
             2952 wiz_defined-function locations,
-            851 strings with 11029 characters,
-and the built_in function-call counts, 8760 in all, are:
-= -- 794
-> -- 391
+            857 strings with 11177 characters,
+and the built_in function-call counts, 9028 in all, are:
+= -- 822
+> -- 398
 < -- 1
-+ -- 149
-- -- 121
-* -- 670
-:= -- 1278
-add.period$ -- 28
-call.type$ -- 28
-change.case$ -- 28
++ -- 152
+- -- 123
+* -- 690
+:= -- 1314
+add.period$ -- 29
+call.type$ -- 29
+change.case$ -- 29
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 239
-empty$ -- 913
-format.name$ -- 146
-if$ -- 2185
+cite$ -- 29
+duplicate$ -- 247
+empty$ -- 943
+format.name$ -- 149
+if$ -- 2254
 int.to.chr$ -- 0
-int.to.str$ -- 28
-missing$ -- 26
-newline$ -- 94
-num.names$ -- 28
-pop$ -- 157
+int.to.str$ -- 29
+missing$ -- 27
+newline$ -- 97
+num.names$ -- 29
+pop$ -- 162
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 522
+skip$ -- 540
 stack$ -- 0
-substring$ -- 533
-swap$ -- 42
+substring$ -- 549
+swap$ -- 43
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 66
-width$ -- 30
-write$ -- 233
+while$ -- 69
+width$ -- 31
+write$ -- 241
+(There was 1 warning)

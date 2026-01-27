@@ -193,6 +193,8 @@ El objetivo de este trabajo es hacer una comparación del rendimiento de las arq
 \section{Metodología}
 %%\label{}
 
+\subsection{Recopilación de datos}
+
 Los datos multiómicos de los 31 tipos de cáncer utilizados en este trabajo se tomaron de proyecto Pan-cancer del Atlas del Genoma de Cáncer (TCGA) \cite{weinstein2013cancer}. Utilizando la biblioteca TCGAbiolinks en R que realiza consultas con la herramienta GDC (Genomic Data Commons), el cual es parte de un proyecto dedicado  a proporcionar una base de datos centralizada para proyectos de investigación en estudios genómicos del cáncer \cite{colaprico2016tcgabiolinks}. Los tipos de cáncer de los tumores y las muestras normales por cada muestra de miARN, ARNm y metilación de ADN se muestran en la siguiente Figura \ref{fig:muestras_TCGA}. El conjunto inicial total consta de 10,511 
 muestras de ARNm, 10,048 muestras de miARN y 8,696 muestras de metilación de ADN.
 
@@ -214,18 +216,19 @@ Los datos en bruto obtenidos cuentan con características (genes) para cada dato
     \label{fig:muestrasxgenes}
 \end{figure}
 
-\subsection{Selección de características y reducción dimensional}
+\subsection{Preprocesamiento de datos}
 
 Los datos en bruto inicial, abarca decenas de miles de genes y sitios CpG, que contienen una gran cantidad de variables no informáticas o ruidosas. Para mitigar la alta dimensionalidad y mejorar la convergencia de los modelos de DL, se aplicó una estrategia de filtrado jerárquico.
 
-El preprocesamiento de datos en bruto se realizó la identificación de características biológicas relevantes y la reducción de dimensionalidad, para extraer características biológicas importantes de datos de alta dimensionalidad \cite{alharbi2025comparative}. Para la identificación biomarcadores que muestran diferencias significativas en los datos de ARNm y metilación se utilizó el análisis de expresión diferencial (DGE) y análisis de metilación diferencial con la herramienta LIMMA. El análisis DGE se utilizó con el paquete de R DESeq2, que consiste en modelar los datos de ARNm usando distribución binomial negativa, para identificar genes que presentan cambios significativos en los niveles de expresión génica \cite{robinson2010edger}. LIMMA se utilizó con el paquete en R, que asume que los datos siguen una distribución normal (Gaussiana) para identificar sitios CpG metilados diferencialmente significativos \cite{ritchie2015limma}. Posteriormente, LASSO fue aplicado en las características resultantes del análisis diferencial para extender la selección de características de los datos de ARNm y metilación de ADN y reducir las  \cite{tibshirani1996regression}, en la Figura \ref{fig:Proc_datos} se muestra en flujo del procesamiento de los datos.
-
-\begin{figure}[ht]
+\begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{Imagenes/Proc_datos.png}
     \caption{Número datos multiómicos total (ARNm, miARN y metilación de ADN) y su distribución por cada tipo muestra tumoral y normal, incluidos en el proyecto Pan-cáncer }
     \label{fig:Proc_datos}
 \end{figure}
+
+El preprocesamiento de datos en bruto se realizó la identificación de características biológicas relevantes y la reducción de dimensionalidad, para extraer características biológicas importantes de datos de alta dimensionalidad \cite{alharbi2025comparative}. Para la identificación biomarcadores que muestran diferencias significativas en los datos de ARNm y metilación se utilizó el análisis de expresión diferencial (DGE) y análisis de metilación diferencial con la herramienta LIMMA. El análisis DGE se utilizó con el paquete de R DESeq2, que consiste en modelar los datos de ARNm usando distribución binomial negativa, para identificar genes que presentan cambios significativos en los niveles de expresión génica \cite{robinson2010edger}. LIMMA se utilizó con el paquete en R, que asume que los datos siguen una distribución normal (Gaussiana) para identificar sitios CpG metilados diferencialmente significativos \cite{ritchie2015limma}. Posteriormente, LASSO fue aplicado en las características resultantes del análisis diferencial para extender la selección de características de los datos de ARNm y metilación de ADN y reducir las  \cite{tibshirani1996regression}, en la Figura \ref{fig:Proc_datos} se muestra en flujo del procesamiento de los datos.
+
 
 \subsubsection{Análisis de expresión génica diferencial (DGE)}
 
@@ -235,9 +238,9 @@ Dado que los datos de secuenciación (ARNm) presentan una naturaleza de conteo d
 
 \subsubsection{Análisis de metilación diferencial}
 
-Para la identificación de alteraciones epigenéticas significativas, se utilizó la herramienta LIMMA (Linear Models for Microarray Data), mediante la cual se ajustó un modelo lineal a los niveles de metilación de cada sitio CpG en función de los grupos de muestras experimentales (muestras de tejido tumorales vs muestras de tejido normal). Este enfoque estadístico se basa en estimaciones de varianza mediante el método Bayesiano empírico, con el cual se evalúa la asociación entre el estado de metilación y el fenotipo clínico de manera robusta, estabilizando los errores estándar a través de los miles de sitios.
+Para la identificación de alteraciones epigenéticas significativas, se utilizó la herramienta LIMMA (Linear Models for Microarray Data), mediante la cual se ajustó un modelo lineal a los niveles de metilación de cada sitio CpG en función de los grupos experimentales (muestras tumorales vs. normales). El conjunto de datos analizado comprendió 9,171 muestras y 485,577 características obtenidas de la plataforma Human Methylation 450K (HM450). Este enfoque estadístico emplea el método Bayesiano empírico para calcular estadísticas $t$ moderadas, lo que permite evaluar la asociación entre el estado de metilación y el fenotipo de manera robusta al estabilizar los errores estándar a través de los miles de sitios analizados.
 
-La selección de los sitios CpG diferencialmente metilados se realizó aplicando criterios estrictos de significancia estadística y magnitud del efecto. Se consideraron candidatos relevantes aquellos sitios que presentaron un valor de p nominal < 0.05 tras el ajuste del modelo. De estos candidatos, se conservan para la etapa de integración multiómica únicamente aquellos que mostraron una diferencia biológica sustancial en los valores Beta entre grupos, asegurando así que las características seleccionadas representaron cambios epigenéticos con potencial impacto funcional en la tumorigénesis.
+La selección de los sitios CpG diferencialmente metilados se realizó aplicando un criterio de significancia estadística con un valor p de corte de 0.05. Este procedimiento permitió filtrar los datos originales y reducir el espacio de características a 139,321 sitios CpG, concentrando el análisis en los cambios de metilación más significativos. De estos candidatos, se conservan para la etapa de integración multiómica aquellos que mostraron una diferencia relativa sustancial en los valores Beta, asegurando que las características seleccionadas representen cambios epigenéticos con un potencial impacto funcional en los mecanismos de tumorigénesis.
 
 
 \subsubsection{LASSO}
@@ -313,7 +316,7 @@ Este modelo se adaptó de la clásica LeNet-5, que su propósito original para e
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\linewidth]{Imagenes/Modelo_LeNetMod.png}
-    \caption{Arquitectura de modelo LeNet modificado para clasificación de 32 tipos de cancer}
+    \caption{Adaptación de la arquitectura LeNet-5. Esquema de la red convolucional jerárquica que ilustra la transición desde la matriz de entrada ($53 \times 53$) hacia la extracción de características mediante dos bloques de filtros ($6 \times 5 \times 5$ y $16 \times 5 \times 5$). El diagrama detalla la integración de Average Pooling ($2 \times 2$) y la fase de aplanamiento (Flatten) previa a un clasificador denso de cuatro capas ($1000 \rightarrow 500 \rightarrow 120 \rightarrow 84$) con activaciones tanh, culminando en la capa Softmax para la clasificación de los 32 subtipos tumorales.}
     \label{fig:LeNetMod}
 \end{figure}
 
@@ -324,7 +327,7 @@ El segundo modelo se adaptó de acuerdo con el propuesto por Chuang et al. (2021
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\linewidth]{Imagenes/Modelo_CNN_Prof.png}
-    \caption{Arquitectura de modelo CNN modificado para clasificación de 32 tipos de cancer}
+    \caption{Arquitectura de modelo CNN profunda. Esquema basado en la propuesta de Chuang et al. para la captura de patrones no lineales. El diagrama ilustra tres bloques de extracción de características con filtros de $64$ y reducción mediante Max-Pooling ($2 \times 2$), transitando desde kernels de $5 \times 5$ hacia $3 \times 3$. Se detalla el proceso de aplanamiento (Flatten) y la transición hacia un clasificador profundo de tres capas densas ($1000 \rightarrow 600 \rightarrow 80$) para la distinción de los 32 subtipos tumorales mediante una capa final Softmax.}
     \label{fig:CNN_prof}
 \end{figure}
 
@@ -340,7 +343,7 @@ Como primera estrategia, se implementó una modelo con arquitectura profunda bas
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\linewidth]{Imagenes/Modelo_RNN_Sec.png}
-    \caption{Arquitectura de modelo LSTM apilado para clasificación de 32 tipos de cancer}
+    \caption{Arquitectura de modelo LSTM apilado. Esquema del modelo de procesamiento secuencial para el vector de $2,794$ características. El diagrama ilustra la etapa de extracción recurrente mediante dos capas LSTM ($128$ y $64$ unidades) para la generación de un vector de contexto global. Se detalla el clasificador profundo compuesto por cuatro capas densas ($1000 \rightarrow 500 \rightarrow 200 \rightarrow 60$) con activación tanh, culminando en la capa de salida Softmax para la clasificación de los 32 tipos tumorales.}
     \label{fig:RNN_sec}
 \end{figure}
 
@@ -349,7 +352,7 @@ Como primera estrategia, se implementó una modelo con arquitectura profunda bas
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\linewidth]{Imagenes/Modelo_GRU_BI.png}
-    \caption{Arquitectura de modelo RNN jerárquico para clasificación de 32 tipos de cáncer}
+    \caption{Arquitectura de modelo RNN jerárquico. Esquema del modelo basado en el flujo de regulación biológica. Se ilustra la proyección lineal independiente de las tres modalidades ($393$ Metilación, $1,881$ miARN, $393$ ARNm) hacia subespacios latentes de $512$ dimensiones. El diagrama detalla la construcción de la secuencia apilada ($T=3$) y su procesamiento mediante una red recurrente bidireccional de dos capas ($256$ unidades), finalizando en un clasificador profundo de $128$ neuronas para la distinción de los 32 subtipos tumorales.}
     \label{fig:Modelo_GRU_BI}
 \end{figure}
 
@@ -361,15 +364,7 @@ Posteriormente, estos embeddings latentes se organizaron en una secuencia corta 
 
 \subsection{Modelos GNN}
 
-Para explotar la topología relacional definida por la matriz de correlación de Pearson, se implementó un marco de modelado basado en grafos utilizando la biblioteca Pytorch Geometric. El grafo de entrada, definido por la matriz de características $X$ y la lista de aristas (edge index), fue procesado por tres arquitecturas distintas: una basada en atención jerárquica, una basada en transformadores y una convolucional profunda, esto para evaluar el impacto de diferentes mecanismos de agregación de vecindad (message passing) en la tarea de clasificación multiclase.
-
-\textit{A. GAT (Graph Attention Network)}
-
-La GAT se implementó con cuatro capas diseñadas con un esquema de atención piramidal, diseñada para gestionar la alta complejidad de las interacciones genéticas. La primera capa proyecta las características de entrada a un espacio latente de 1024 dimensiones distribuidas en 8 cabezales de atención, generando un intermedio masivo de 8,192 características por nodo. Para canalizar esta información, las capas subsiguientes reducen progresivamente la dimensionalidad (512 características $\times$ 4 cabezales) y la tercera a 512 dimensiones (256 características $\times$ 2 cabezales). Finalmente, la última capa consolida la información en un único cabezal que mapea directamente a las 32 dimensiones de salida correspondiente a las clases objetivo. Este flujo se estabiliza mediante normalización por lotes aplicada a las salidas de alta dimensionalidad antes de la activación LeakyReLU y Dropout del 0.1.
-
-\textit{B. GTN (Graph Transformer Network)}
-
-Para capturar dependencias globales complejas, se evaluó una arquitectura basada en Graph Transformer que mantiene una densidad de características constante a través de sus capas profundas. El modelo consta de tres bloques TransformerConv consecutivos, configuradas cada uno con 6 cabezales de atención y 80 canales por cabezal, resultando en una representación vectorial constante de 480 dimensiones por nodo a lo largo de la red. Esta preservación del ancho de banda permite al modelo refinar las representaciones sin pérdida de información prematura. La capa final transforma este vector de 480 dimensiones mediante un único cabezal de atención hacia los 32 logits de clasificación, Dado el alto número de parámetros implicados en los bloques de atención densa, se aplicó una tasa de Dropout del 0.5 junto con activaciones LeakyReLU para maximizar la capacidad de generalización.
+Para explotar la topología relacional definida por la matriz de correlación de Pearson, se implementó un marco de modelado basado en grafos utilizando la biblioteca Pytorch Geometric. El grafo de entrada, definido por la matriz de características $X$ y la lista de aristas (edge index), fue procesado por tres arquitecturas distintas: una convolucional grafica, una basada en atención jerárquica y una basada en transformadores, esto para evaluar el impacto de diferentes mecanismos de agregación de vecindad (message passing) en la tarea de clasificación multiclase.
 
 \textit{C. GCN (Graph Convolutional Network)}
 
@@ -378,8 +373,32 @@ Se diseñó una GCN de 4 capas con una arquitectura de compresión piramidal (Fi
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\linewidth]{Imagenes/Modelo_GCN.png}
-    \caption{Flujo de procesamiento desde la entrada multi-ómica ($N=2,794$) hasta la clasificación de 32 tipos de cáncer. Los bloques representan la reducción jerárquica de dimensionalidad ($600 \rightarrow 300 \rightarrow 150 \rightarrow 32$), diseñada para la síntesis de representaciones latentes abstractas. Se indican las capas de convolución gráfica (bloques blancos) y la capa de salida (esferas amarillas), integrando regularización Dropout y activaciones ReLU en cada etapa de compresión.}
+    \caption{Arquitectura GCN (Graph Convolutional Network). Flujo de procesamiento desde la entrada multi-ómica ($N=2,794$) hasta la clasificación de 32 tipos de cáncer. Los bloques representan la reducción jerárquica de dimensionalidad ($600 \rightarrow 300 \rightarrow 150 \rightarrow 32$), diseñada para la síntesis de representaciones latentes abstractas. Se indican las capas de convolución gráfica (bloques blancos) y la capa de salida (esferas amarillas), integrando regularización Dropout y activaciones ReLU en cada etapa de compresión.}
     \label{fig:Modelo_GCN}
+\end{figure}
+
+\textit{A. GAT (Graph Attention Network)}
+
+La GAT se implementó con cuatro capas diseñadas con un esquema de atención piramidal, diseñada para gestionar la alta complejidad de las interacciones genéticas (Figura \ref{fig:Modelo_GAT}). La primera capa proyecta las características de entrada a un espacio latente de 1024 dimensiones distribuidas en 8 cabezales de atención, generando un intermedio masivo de 8,192 características por nodo. Para canalizar esta información, las capas subsiguientes reducen progresivamente la dimensionalidad (512 características $\times$ 4 cabezales) y la tercera a 512 dimensiones (256 características $\times$ 2 cabezales). Finalmente, la última capa consolida la información en un único cabezal que mapea directamente a las 32 dimensiones de salida correspondiente a las clases objetivo. Este flujo se estabiliza mediante normalización por lotes aplicada a las salidas de alta dimensionalidad antes de la activación LeakyReLU y Dropout del 0.1.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Imagenes/Modelo_GAT.png}
+    \caption{Arquitectura GAT (Graph Attention Network). Representación del flujo de atención multi-cabezal para la clasificación de 32 tipos de cáncer. El diagrama detalla la arquitectura de compresión jerárquica mediante capas GATConv, partiendo de una proyección inicial de alta densidad ($1024 \times 8$ cabezales) hacia capas de dimensiones reducidas ($512 \times 4$ y $256 \times 2$). Las esferas amarillas representan la consolidación final en un único cabezal de atención para el mapeo de las clases objetivo. Se indica la integración de Batch Normalization y activación LeakyReLU para la estabilidad del entrenamiento.}
+    \label{fig:Modelo_GAT}
+\end{figure}
+
+
+
+\textit{B. GTN (Graph Transformer Network)}
+
+Para capturar dependencias globales complejas, se evaluó una arquitectura basada en Graph Transformer que mantiene una densidad de características constante a través de sus capas profundas (Figura \ref{fig:Modelo_GTN}). El modelo consta de tres bloques TransformerConv consecutivos, configuradas cada uno con 6 cabezales de atención y 80 canales por cabezal, resultando en una representación vectorial constante de 480 dimensiones por nodo a lo largo de la red. Esta preservación del ancho de banda permite al modelo refinar las representaciones sin pérdida de información prematura. La capa final transforma este vector de 480 dimensiones mediante un único cabezal de atención hacia los 32 logits de clasificación, Dado el alto número de parámetros implicados en los bloques de atención densa, se aplicó una tasa de Dropout del 0.5 junto con activaciones LeakyReLU para maximizar la capacidad de generalización.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Imagenes/Modelo_GTN.png}
+    \caption{Arquitectura Graph Transformer (GTN). Diagrama del flujo de atención mediante bloques \textit{TransformerConv} ($80 \times 6$ cabezales). A diferencia de los modelos piramidales, esta red mantiene una densidad constante de 480 dimensiones para el refinamiento de características globales. Se detalla la transición desde la entrada ($N=2,794$) hasta la salida de 32 clases, integrando Dropout de 0.5 y activaciones LeakyReLU.}
+    \label{fig:Modelo_GTN}
 \end{figure}
 
 
@@ -389,14 +408,31 @@ Se diseñó una GCN de 4 capas con una arquitectura de compresión piramidal (Fi
 %    \item GNN: Describir la arquitectura (GCN, GAT, GTN) numero de capas
 %\end{itemize}
 
-\subsection{Entrenamiento y validacion}
+\subsection{Configuración experimental y métricas de evaluación}
 
+La evaluación comparativa de las arquitecturas propuestas se fundamentó en un marco metodológico estricto, diseñado para maximizar la transparencia y la solidez estadística del estudio. Esta sección describe el entorno de hardware y software implementado, así como las métricas seleccionadas para cuantificar la eficacia de los modelos en un contexto de clasificación multiclase.
 
-\begin{itemize}
-    \item Division de los conjuntos de entrenamiento y validacion
-    \item Hiperametros: Tasa de aprendizaje, optimizador, funcion de perdida, numero de epocas, sobre ajuste (dropout)
-    \item Metricas de evaluacion utilizadas
-\end{itemize}
+\subsubsection{Entorno de hardware y software}
+
+Todos los modelos y experimentos fueron implementados utilizando el lenguaje de programación Python 3.9.10. La infraestructura de software se basó en un ecosistema híbrido actualizado: se empleó TensorFlow 2.19.0 para las arquitecturas matriciales (CNN) y secuenciales (RNN), mientras que PyTorch 2.6.0 junto con PyTorch Geometric 2.6.1 se utilizaron para el desarrollo de la arquitectura GRU bidireccional y los modelos de grafos (GNN).
+
+El entrenamiento de los modelos se llevó a cabo en un servidor de cómputo de alto rendimiento operando bajo el sistema operativo Ubuntu 24.04.3 LTS. Dado el volumen masivo de los grafos y matrices generados, el procesamiento se realizó en una arquitectura basada en CPU, utilizando un procesador Intel® Xeon® E5-4620 v2 (64 núcleos lógicos) respaldado por una memoria RAM de 320 GB, lo que permitió la carga íntegra de los datasets en memoria y el manejo eficiente de tensores de alta dimensionalidad sin requerir aceleración por hardware (CUDA).
+
+\subsubsection{Partición de Datos y Protocolo}
+
+El conjunto de datos total se sometió a una partición estratificada del 75/25. El 75\% de las muestras se destinó al conjunto de entrenamiento (training set) para el ajuste de los pesos sinápticos, mientras que el 25\% restante se reservó estrictamente como conjunto de validación (validation set) para la evaluación final del desempeño. Esta proporción garantiza un volumen suficiente de datos para la generalización del modelo, manteniendo al mismo tiempo un subconjunto de prueba estadísticamente significativo para las 32 clases.
+
+\subsubsection{Métricas de evaluación}
+
+Dada la naturaleza crítica de la clasificación de tipos de cáncer y el desbalance de clases inherente al conjunto de datos, la evaluación del rendimiento no se limitó a la precisión global. Por consiguiente, se adoptó un enfoque multidimensional alineado con los estándares de la literatura en aprendizaje profundo clínico \cite{chicco2020advantages}, priorizando métricas que cuantifiquen la robustez de las predicciones en espacios de alta dimensionalidad.
+
+\textit{Exactitud}
+
+Se calculó la exactitud como la proporcion global de predicciones correctas. si bien es una metrica estandar para monitorear la convergencia, su interpretacion definitiva se debe realizar junto con otras métricas. En el contexto de aprendizaje profundo con datos desbalanceados, se ha demostrado que esta metrica puede ofrecer una visión incompleta del rendimiento del modelo \cite{johnson2019survey}.
+
+\begin{equation*}
+    \text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}
+\end{equation*}
 
 
 \section{Resultados}
