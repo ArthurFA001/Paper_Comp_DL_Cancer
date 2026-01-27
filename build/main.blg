@@ -1,50 +1,46 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-Reallocating 'name_of_file' (item size: 1) to 15 items.
 The style file: elsarticle-num.bst
-Reallocating 'name_of_file' (item size: 1) to 14 items.
 Database file #1: Blibliografia.bib
-Warning--I didn't find a database entry for "chicco2020advantages"
-You've used 29 entries,
+You've used 31 entries,
             2952 wiz_defined-function locations,
-            857 strings with 11177 characters,
-and the built_in function-call counts, 9028 in all, are:
-= -- 822
-> -- 398
+            869 strings with 11482 characters,
+and the built_in function-call counts, 9528 in all, are:
+= -- 871
+> -- 412
 < -- 1
-+ -- 152
-- -- 123
-* -- 690
-:= -- 1314
-add.period$ -- 29
-call.type$ -- 29
-change.case$ -- 29
++ -- 158
+- -- 127
+* -- 719
+:= -- 1385
+add.period$ -- 31
+call.type$ -- 31
+change.case$ -- 31
 chr.to.int$ -- 0
-cite$ -- 29
-duplicate$ -- 247
-empty$ -- 943
-format.name$ -- 149
-if$ -- 2254
+cite$ -- 31
+duplicate$ -- 262
+empty$ -- 1002
+format.name$ -- 154
+if$ -- 2386
 int.to.chr$ -- 0
-int.to.str$ -- 29
-missing$ -- 27
-newline$ -- 97
-num.names$ -- 29
-pop$ -- 162
+int.to.str$ -- 31
+missing$ -- 29
+newline$ -- 103
+num.names$ -- 31
+pop$ -- 173
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 540
+skip$ -- 576
 stack$ -- 0
-substring$ -- 549
-swap$ -- 43
+substring$ -- 574
+swap$ -- 45
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 69
-width$ -- 31
-write$ -- 241
-(There was 1 warning)
+while$ -- 73
+width$ -- 33
+write$ -- 257

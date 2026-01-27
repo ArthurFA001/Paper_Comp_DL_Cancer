@@ -424,19 +424,45 @@ El conjunto de datos total se sometió a una partición estratificada del 75/25.
 
 \subsubsection{Métricas de evaluación}
 
-Dada la naturaleza crítica de la clasificación de tipos de cáncer y el desbalance de clases inherente al conjunto de datos, la evaluación del rendimiento no se limitó a la precisión global. Por consiguiente, se adoptó un enfoque multidimensional alineado con los estándares de la literatura en aprendizaje profundo clínico \cite{chicco2020advantages}, priorizando métricas que cuantifiquen la robustez de las predicciones en espacios de alta dimensionalidad.
+Dada la naturaleza crítica de la clasificación de tipos de cáncer y el desbalance de clases inherente al conjunto de datos, la evaluación del rendimiento no se limitó a la precisión global. Por consiguiente, se adoptó un enfoque multidimensional alineado con los estándares de la literatura en aprendizaje profundo clínico \cite{grandini2020metrics}, priorizando métricas que cuantifiquen la robustez de las predicciones en espacios de alta dimensionalidad.
 
-\textit{Exactitud}
+\textit{A. Exactitud}
 
-Se calculó la exactitud como la proporcion global de predicciones correctas. si bien es una metrica estandar para monitorear la convergencia, su interpretacion definitiva se debe realizar junto con otras métricas. En el contexto de aprendizaje profundo con datos desbalanceados, se ha demostrado que esta metrica puede ofrecer una visión incompleta del rendimiento del modelo \cite{johnson2019survey}.
+Se calculó la exactitud como la proporción global de predicciones correctas. si bien es una métrica estándar para monitorear la convergencia, su interpretación definitiva se debe realizar junto con otras métricas. En el contexto de aprendizaje profundo con datos desbalanceados, se ha demostrado que esta métrica puede ofrecer una visión incompleta del rendimiento del modelo \cite{johnson2019survey}.
 
 \begin{equation*}
     \text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}
 \end{equation*}
 
-\textit{Precisión, Sensibilidad y F1-Score}
+Donde $TP$ (True Positives) representa las instancias correctamente clasificadas como positivas, $TN$ (True Negatives) las correctamente clasificadas como negativas, $FP$ (False Positives) las incorrectamente clasificadas como positivas y $FN$ (False Negatives) las incorrectamente clasificadas como negativas.
 
+\textit{B. Precisión y sensibilidad}
 
+Para evaluar la calidad el desempeño detallado de cada clase, se calcularon las métricas de precisión (precision) y sensibilidad (recall). La precisión ($P$) mide la proporción de verdaderos positivos entre todas las predicciones positivas, reflejando la capacidad del modelo para evitar falsos positivos. La sensibilidad ($R$) cuantifica la proporción de verdaderos positivos detectados entre todos los casos reales positivos, evaluando la habilidad del modelo para identificar correctamente las instancias de cada clase.
+
+\begin{equation*}
+    P = \frac{TP}{TP + FP} \quad , \quad R = \frac{TP}{TP + FN}
+\end{equation*}
+
+\textit{C. F1-Score}
+
+Para armonizar la evaluación entre precisión y sensibilidad, se utilizó el Macro-F1. Esta métrica proporciona una medida balanceada del rendimiento del modelo, especialmente relevante en escenarios de clasificación multiclase con distribución desigual de clases. El enfoque Macro trata a todas las clases con igual importancia estadística ($K=32$). Esto penaliza severamente a las arquitecturas que logran una alta exactitud global sacrificando el aprendizaje de las clases minoritarias.
+
+\begin{equation*}
+    \text{Macro-F1} = \frac{1}{K} \sum_{i=1}^{K} \frac{2 \cdot P_i \cdot R_i}{P_i + R_i}
+\end{equation*}
+
+Donde $P_i$ y $R_i$ son la precisión y sensibilidad calculadas para la clase $i$-ésima.
+
+\textit{D. Coeficiente de Correlación de Matthews (MCC) multiclase}
+
+Se seleccionó el MCC como la metrica definitiva para comparar la generalizacion de los modelos. En el contexto aprendizaje profundo, el MCC ofrece una validacion mas robusta de la capacidad predictiva, especialmente en escenarios con clases desbalanceadas. Esta métrica considera todos los elementos de la matriz de confusión, proporcionando una evaluación integral del rendimiento del modelo. La fórmula del MCC para clasificación multiclase es la siguiente \cite{gorodkin2004comparing}:
+
+\begin{equation*}
+    \text{MCC} = \frac{c \cdot s - \sum_{k} p_k \cdot t_k}{\sqrt{(s^2 - \sum_{k} p_k^2)(s^2 - \sum_{k} t_k^2)}}
+\end{equation*}
+
+Donde $c$ es el número de muestras correctamente clasificadas, $s$ es el total de muestras, $p_k$ es el número de predicciones para la clase $k$, y $t_k$ es el número real de instancias de la clase $k$. El MCC varía entre -1 y +1, donde +1 indica una predicción perfecta, 0 representa una predicción aleatoria y -1 denota una clasificación completamente incorrecta.
 
 
 \section{Resultados}
