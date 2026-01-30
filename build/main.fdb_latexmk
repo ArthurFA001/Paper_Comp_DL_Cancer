@@ -1,16 +1,16 @@
 # Fdb version 4
-["bibtex build/main"] 1769544201.39566 "build/main.aux" "build/main.bbl" "build/main" 1769544311.8108 0
+["bibtex build/main"] 1769756330.09039 "build/main.aux" "build/main.bbl" "build/main" 1769756350.49307 0
   "./Blibliografia.bib" 1769544009.62738 9975 083bf2806a1a60aee2ff2cd6aa0733ba ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/elsarticle/elsarticle-num.bst" 1606256092 29462 43db4fe246825ec69ed81b2463c17f04 ""
-  "build/main.aux" 1769544311.61947 16565 ca0aee21ab7acaa0ec9a22017f1b3499 "pdflatex"
+  "build/main.aux" 1769756350.25962 16706 b723a88f0d2c897bc49046a4fdd59dd0 "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1769544289.49074 "/home/arthur1/Escritorio/Paper_Comp_DL_Cancer/main.tex" "build/main.pdf" "main" 1769544311.81127 0
+["pdflatex"] 1769756330.14493 "/home/arthur1/Escritorio/Paper_Comp_DL_Cancer/main.tex" "build/main.pdf" "main" 1769756350.49367 0
   "/etc/texmf/web2c/texmf.cnf" 1748031927.46088 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/arthur1/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1769532844.91483 11524 9765a17d888c59549b536e891f27f62f ""
-  "/home/arthur1/Escritorio/Paper_Comp_DL_Cancer/main.tex" 1769544289.10775 49565 12f708a2e5b35d840b123bf31bd941c5 ""
+  "/home/arthur1/Escritorio/Paper_Comp_DL_Cancer/main.tex" 1769756307.8711 52327 ad0173a3898b8bd26d998b68a1bcc6cb ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136768653 1616 371d1ee60c04b008c8fd760060cd34f1 ""
@@ -28,6 +28,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1136768653 768 1321e9409b4137d6fb428ac9dc956269 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm" 1136768653 564 cb1a5fc3f0326dd000c6e6c0fce59d7c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm" 1136768653 1032 7fa31d93ecd4cbdfac02c7a1ebc6facc ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm" 1136768653 1148 56b0fdf7ca3f800294e968f64cfdcb87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm" 1136768653 2080 40a71f65088bdd047622ce295520749e ""
@@ -39,6 +40,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1248133631 31099 c85edf1dd5b9e826d67c9c7293b6786c ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb" 1136849748 12410 7504dd653d0e7cf266cb973aeafd597c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb" 1136849748 9356 a3851bc942e9b6995883193472ba1847 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb" 1136849748 15213 d999bbe8bd9c8f231f3f66a737c76478 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb" 1136849748 52406 dad2f72863a03727d5f536c64a69c452 ""
@@ -100,6 +102,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty" 1705955748 6565 cfd9fd0a1d5f5ad985151778771ff7a9 ""
   "/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty" 1696969620 9327 c30c00c0072edba199ede5889311aaa9 ""
   "/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1279039959 678 4792914a8f45be57bb98413425e4c7af ""
+  "/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty" 1615845910 6149 2398eec4faa1ee24ff761581e580ecf1 ""
   "/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty" 1707919699 45458 f1c6cb3edd91174e966cbbaf88993bcf ""
   "/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty" 1615762720 4288 94714aa7f535440f33181fec52a31963 ""
   "/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathpazo.sty" 1586716065 8976 3f18c815295e2a2949e87fa743bcb489 ""
@@ -109,6 +112,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd" 1137110629 961 06b773644d960aac68add40fcb596208 ""
   "/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd" 1137110629 436 5e7baa1a259bab50a2bdffad6426f38c ""
   "/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd" 1137110629 619 35f1cf70bf09b6e2d22ee0902cfb1a8b ""
+  "/usr/share/texlive/texmf-dist/tex/latex/psnfss/ufplmbb.fd" 1137110629 321 077609d8fc08b1f1181795378b603500 ""
   "/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty" 1576624809 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657483315 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "/usr/share/texlive/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
@@ -126,11 +130,11 @@
   "Imagenes/Muestras_TCGA.png" 1769532553.34356 189978 adcf2f13b6fb782d5e427bf273c7c5e0 ""
   "Imagenes/Proc_datos.png" 1769532553.34956 909736 a39fdef97635f260c911667cdfc188fd ""
   "Imagenes/muestrasxgenes.png" 1769532553.35356 510731 79ca0a709e6889517d4844426010f7c5 ""
-  "build/main.aux" 1769544311.61947 16565 ca0aee21ab7acaa0ec9a22017f1b3499 "pdflatex"
-  "build/main.bbl" 1769544201.43484 6684 91a9d2732c2dfdbe57531cf2af59eacd "bibtex build/main"
-  "build/main.out" 1769544311.62147 5008 a34792996ae5a76a851d0693251b2b92 "pdflatex"
-  "build/main.spl" 1769544289.73174 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1769544289.10775 49565 12f708a2e5b35d840b123bf31bd941c5 ""
+  "build/main.aux" 1769756350.25962 16706 b723a88f0d2c897bc49046a4fdd59dd0 "pdflatex"
+  "build/main.bbl" 1769756330.13117 6684 91a9d2732c2dfdbe57531cf2af59eacd "bibtex build/main"
+  "build/main.out" 1769756350.26062 5240 b7f7fba0c6d07acae751e8363db275aa "pdflatex"
+  "build/main.spl" 1769756330.38687 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1769756307.8711 52327 ad0173a3898b8bd26d998b68a1bcc6cb ""
   (generated)
   "build/main.aux"
   "build/main.log"

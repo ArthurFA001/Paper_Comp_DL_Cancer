@@ -21,6 +21,7 @@
 %\usepackage[utf8]{inputenc}
 \usepackage{mathpazo} %Tipo de letra
 \usepackage{parskip} %saltos de parrafo
+\usepackage{multirow}
 \setlength{\parskip}{\baselineskip}
 
 %% Use the option review to obtain double line spacing
@@ -356,9 +357,9 @@ Como primera estrategia, se implementó una modelo con arquitectura profunda bas
     \label{fig:Modelo_GRU_BI}
 \end{figure}
 
-Por otro lado, para mitigar los problemas de dispersión de señal en secuencias largas, se implementó una variante jerárquica optimizada denominada OmicsRNN (Figura \ref{fig:Modelo_GRU_BI}). A diferencia del modelo anterior, este modelo segrega inicialmente los datos en sus tres modalidades constitutivas (ARNm, miARN y metilación), en vectores latentes de 512 dimensiones mediante proyecciones densas independientes (Lineal $\rightarrow$ Batch Normalization $\rightarrow$ ReLU $\rightarrow$ Dropout). Esto permite al modelo aprender representaciones específicas para cada ómica antes de la integración. 
+Por otro lado, para mitigar los problemas de dispersión de señal en secuencias largas, se implementó una variante jerárquica optimizada utilizando una red GRU bidireccional (Figura \ref{fig:Modelo_GRU_BI}). A diferencia del modelo anterior, este modelo segrega inicialmente los datos en sus tres modalidades constitutivas (ARNm, miARN y metilación), en vectores latentes de 512 dimensiones mediante proyecciones densas independientes (Lineal $\rightarrow$ Batch Normalization $\rightarrow$ ReLU $\rightarrow$ Dropout). Esto permite al modelo aprender representaciones específicas para cada ómica antes de la integración. 
 
-Posteriormente, estos embeddings latentes se organizaron en una secuencia corta de tres pasos ($T=3$) siguiendo el flujo de regulación biológica (Metilación $\rightarrow$ miARN $\rightarrow$ ARNm). La secuencia compacta alimenta una Unidad Recurrente Con Puerta (GRU) bidireccional de 2 capas con 256 unidades ocultas. La bidireccionalidad es crucial, ya que permite al modelo capturar tanto la regulación hacia adelante como las dependencias inversas o de retroalimentación biológica. Finalmente, el estado oculto concatenado de la GRU se procesa mediante un clasificador de una única capa densa de 128 neuronas con activación ReLU y regularización Droput.
+Posteriormente, estos embeddings latentes se organizaron en una secuencia corta de tres pasos ($T=3$) siguiendo el flujo de regulación biológica (Metilación $\rightarrow$ miARN $\rightarrow$ ARNm). La secuencia compacta alimenta una Unidad Recurrente Con Compuerta (GRU) bidireccional de 2 capas con 256 unidades ocultas. La bidireccionalidad es crucial, ya que permite al modelo capturar tanto la regulación hacia adelante como las dependencias inversas o de retroalimentación biológica. Finalmente, el estado oculto concatenado de la GRU se procesa mediante un clasificador de una única capa densa de 128 neuronas con activación ReLU y regularización Droput.
 
 
 
@@ -464,11 +465,39 @@ Se seleccionó el MCC como la metrica definitiva para comparar la generalizacion
 
 Donde $c$ es el número de muestras correctamente clasificadas, $s$ es el total de muestras, $p_k$ es el número de predicciones para la clase $k$, y $t_k$ es el número real de instancias de la clase $k$. El MCC varía entre -1 y +1, donde +1 indica una predicción perfecta, 0 representa una predicción aleatoria y -1 denota una clasificación completamente incorrecta.
 
+\textit{E. Matriz de confusión}
+
+E. Matriz de Confusión
+Finalmente, se generaron matrices de confusión ($C \in \mathbb{R}^{32 \times 32}$) normalizadas para visualizar la topología del error. Esto permitió analizar si las arquitecturas basadas en grafos (GNN) logran desenredar las representaciones latentes de tejidos biológicamente similares (e.j., COAD vs. READ) mejor que las proyecciones espaciales (CNN) o secuenciales (RNN).
+
 
 \section{Resultados}
 %%\label{}
-- Rendimiento comparativo con tablas para mostrar las metricas de cada modelo y el tiempo de entrenamiento de cada uno
-- Graficos como precision y perdida en entrenamiento y validacion y matrices de confusion
+Es este capítulo se presenta el análisis cuantitativo y cualitativo del desempeño de las siete arquitecturas de aprendizaje profundo evaluadas: dos basadas en representaciones espaciales (CNN), dos secuenciales (RNN) y tres en topología de grafos (GNN). Para garantizar la validez estadística de los resultados y mitigar el efecto de la inicialización estocástica de los pesos, el diseño experimental consistió en cinco corridas independientes (n=5) para cada modelo, manteniendo constantes los hiperparámetros y la partición estratificada de los datos.
+
+\subsection{Comparativa global de rendimiento}
+
+La Tabla \ref{tab:global_performance} resume las métricas de evaluación obtenidas en la corrida experimental más representativa. Los resultados revelan una jerarquía de rendimiento clara definida por la estrategia de datos, donde los modelos basados en grafos superan consistentemente a los enfoques secuenciales y espaciales.
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[]
+\begin{tabular}{cccccccc}
+\hline
+\textbf{Enfoque} & \textbf{Arquitectura} & \textbf{MCC} & \textbf{Exactitud} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} & \textbf{Tiempo} \\ \hline
+\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Espacial\\ (CNN)\end{tabular}}} & \textbf{\begin{tabular}[c]{@{}c@{}}Lenet-5\\ variante\end{tabular}} & 0.9272 & 93.05\% & 89.80\% & 88.75\% & 88.95\% & 1m 54s \\ \cline{2-8} 
+ & \textbf{\begin{tabular}[c]{@{}c@{}}CNN\\ profunda\end{tabular}} & 0.8689 & 87.48\% & 84.62\% & 81.34\% & 81.99\% & 24m 33s \\ \hline
+\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Secuencial\\ (RNN)\end{tabular}}} & \textbf{\begin{tabular}[c]{@{}c@{}}LSTM \\ apilada\end{tabular}} & 0.8855 & 83.35\% & 89.08\% & 82.59\% & 81.97\% & 11m 35s \\ \cline{2-8} 
+ & \textbf{\begin{tabular}[c]{@{}c@{}}GRU\\ bidireccional\end{tabular}} & 0.9431 & 94.57\% & 92.10\% & 91.16\% & 91.51\% & 11m 10s \\ \hline
+\multirow{3}{*}{\textbf{GNN}} & \textbf{GCN} & 0.9525 & 95.46\% & 94.98\% & 92.30\% & 93.22\% & 11s \\ \cline{2-8} 
+ & \textbf{GAT} & 0.9535 & 95.56\% & 94.69\% & 93.16\% & 93.55\% & 4m 4s \\ \cline{2-8} 
+ & \textbf{GTN} & 0.9569 & 95.89\% & 94.80\% & 94.21\% & 94.18\% & 43s \\ \hline
+\end{tabular}
+\end{table}
 
 
 
