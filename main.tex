@@ -485,7 +485,10 @@ La Tabla \ref{tab:global_performance} resume las métricas de evaluación obteni
 % \usepackage{multirow}
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
-\begin{table}[]
+\begin{table}[]\scriptsize
+\caption{Comparativa de rendimiento entre arquitecturas de aprendizaje profundo para la clasificación multiclase de tipos de cáncer utilizando datos multiómicos integrados. Se presentan las métricas clave: Coeficiente de Correlación de Matthews (MCC), Exactitud, Precisión, Sensibilidad (Recall), F1-Score y Tiempo de entrenamiento. Los resultados destacan la superioridad de las arquitecturas basadas en grafos (GNN) en comparación con los enfoques espaciales (CNN) y secuenciales (RNN).}
+\label{tab:global_performance}
+\centering
 \begin{tabular}{cccccccc}
 \hline
 \textbf{Enfoque} & \textbf{Arquitectura} & \textbf{MCC} & \textbf{Exactitud} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} & \textbf{Tiempo} \\ \hline
@@ -499,6 +502,9 @@ La Tabla \ref{tab:global_performance} resume las métricas de evaluación obteni
 \end{tabular}
 \end{table}
 
+El modelo GTN demostró una superioridad estadística significativa en este estudio, alcanzando el máximo desempeño global con un MCC de 0.9569 y una Exactitud del 95\%. Al comparar exclusivamente los mejores exponentes de cada paradigma, la arquitectura GTN logró superar al mejor modelo basado en imágenes (Variante LeNet-5) por un margen relativo del +3.2\%, y al mejor modelo secuencial (GRU bidireccional) por un +1.5\%. Este hallazgo nos muestra que aunque la bidireccionalidad de la GRU permite capturar un contexto global competitivo, la topología de grafo proporciono un sesgo inductivo biológicamente superior. Esta confirma que modelar explícitamente las interacciones funcionales entre genes es más eficaz que intentar inferirlas implícitamente a través de secuencias temporales o proyecciones espaciales artificiales.
+
+Para confirmar la robustez de los modelos, se analizaron las variaciones de desempeño a través de cinco repeticiones independientes. La Tabla \ref{} representa la media y la desviacion estandar del MCC, 
 
 
 \section{Discusión}
