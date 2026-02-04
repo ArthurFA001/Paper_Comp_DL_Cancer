@@ -473,7 +473,7 @@ Finalmente, se generaron matrices de confusión ($C \in \mathbb{R}^{32 \times 32
 
 \section{Resultados}
 %%\label{}
-Es este capítulo se presenta el análisis cuantitativo y cualitativo del desempeño de las siete arquitecturas de aprendizaje profundo evaluadas: dos basadas en representaciones espaciales (CNN), dos secuenciales (RNN) y tres en topología de grafos (GNN). Para garantizar la validez estadística de los resultados y mitigar el efecto de la inicialización estocástica de los pesos, el diseño experimental consistió en cinco corridas independientes (n=5) para cada modelo, manteniendo constantes los hiperparámetros y la partición estratificada de los datos.
+Es este capítulo se presenta el análisis del desempeño de las siete arquitecturas de aprendizaje profundo evaluadas: dos basadas en representaciones espaciales (CNN), dos secuenciales (RNN) y tres en topología de grafos (GNN). Para garantizar la validez estadística de los resultados y mitigar el efecto de la inicialización estocástica de los pesos, el diseño experimental consistió en cinco corridas independientes (n=5) para cada modelo, manteniendo constantes los hiperparámetros y la partición estratificada de los datos.
 
 \subsection{Comparativa global de rendimiento}
 
@@ -496,19 +496,103 @@ La Tabla \ref{tab:global_performance} resume las métricas de evaluación obteni
  & \textbf{\begin{tabular}[c]{@{}c@{}}CNN\\ profunda\end{tabular}} & 0.8689 & 87.48\% & 84.62\% & 81.34\% & 81.99\% & 24m 33s \\ \hline
 \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Secuencial\\ (RNN)\end{tabular}}} & \textbf{\begin{tabular}[c]{@{}c@{}}LSTM \\ apilada\end{tabular}} & 0.8855 & 83.35\% & 89.08\% & 82.59\% & 81.97\% & 11m 35s \\ \cline{2-8} 
  & \textbf{\begin{tabular}[c]{@{}c@{}}GRU\\ bidireccional\end{tabular}} & 0.9431 & 94.57\% & 92.10\% & 91.16\% & 91.51\% & 11m 10s \\ \hline
-\multirow{3}{*}{\textbf{GNN}} & \textbf{GCN} & 0.9525 & 95.46\% & 94.98\% & 92.30\% & 93.22\% & 11s \\ \cline{2-8} 
+\multirow{3}{*}{\textbf{GNN}} & \textbf{GCN} & 0.9525 & 95.46\% & \textbf{94.98\%} & 92.30\% & 93.22\% & 11s \\ \cline{2-8} 
  & \textbf{GAT} & 0.9535 & 95.56\% & 94.69\% & 93.16\% & 93.55\% & 4m 4s \\ \cline{2-8} 
- & \textbf{GTN} & 0.9569 & 95.89\% & 94.80\% & 94.21\% & 94.18\% & 43s \\ \hline
+ & \textbf{GTN} & \textbf{0.9569} & \textbf{95.89\%} & 94.80\% & \textbf{94.21\%} & \textbf{94.18\%} & 43s \\ \hline
 \end{tabular}
 \end{table}
 
-El modelo GTN demostró una superioridad estadística significativa en este estudio, alcanzando el máximo desempeño global con un MCC de 0.9569 y una Exactitud del 95\%. Al comparar exclusivamente los mejores exponentes de cada paradigma, la arquitectura GTN logró superar al mejor modelo basado en imágenes (Variante LeNet-5) por un margen relativo del +3.2\%, y al mejor modelo secuencial (GRU bidireccional) por un +1.5\%. Este hallazgo nos muestra que aunque la bidireccionalidad de la GRU permite capturar un contexto global competitivo, la topología de grafo proporciono un sesgo inductivo biológicamente superior. Esta confirma que modelar explícitamente las interacciones funcionales entre genes es más eficaz que intentar inferirlas implícitamente a través de secuencias temporales o proyecciones espaciales artificiales.
+El modelo GTN demostró una superioridad estadística significativa en este estudio, alcanzando el máximo desempeño global con un MCC de 0.9569 y una Exactitud del 95\%. Al comparar exclusivamente los mejores exponentes de cada enfoque, la arquitectura GTN logró superar al mejor modelo basado en imágenes (Variante LeNet-5) por un margen relativo del +3.2\%, y al mejor modelo secuencial (GRU bidireccional) por un +1.5\%. Este hallazgo nos muestra que aunque la bidireccionalidad de la GRU permite capturar un contexto global competitivo, la topología de grafo proporciono un sesgo inductivo biológicamente superior. Esta confirma que modelar explícitamente las interacciones funcionales entre genes es más eficaz que intentar inferirlas implícitamente a través de secuencias temporales o proyecciones espaciales artificiales.
 
-Para confirmar la robustez de los modelos, se analizaron las variaciones de desempeño a través de cinco repeticiones independientes. La Tabla \ref{} representa la media y la desviacion estandar del MCC, 
+Por otra parte un resultado contraintuitivo y critico se observo dentro del enfoque espacial (CNN). Contrario a la tendencia habitual en vision por computadora, la variante de la arquitectura LeNet-5 (MCC 0.9272) tuvo un rendimiento significativamente superior a la CNN profunda (MCC 0.8689). Este fenome sugiere que la transformación de datos ómicos no euclidianos en mapas de 2D introduce artefactos toplogicos que las arquitecturas profundas no pueden manejar eficazmente. La profundidad excesiva puede llevar a la pérdida de información crítica en regiones dispersas del espacio de características, lo que resalta la importancia de seleccionar arquitecturas adecuadas al dominio de los datos.
+
+\subsection{Analisis de estabilidad}
+
+La robustez de los modelos fue validada a traves de cinco repeticiones independientes, permitiendo evaluar la variabilidad del desempeño y asegurar la estabilidad de las metricas (MCC,Exactitud y Precision). En la tabla \ref{tab:estabilidad} se presenta la media ($\mu$), desviación estándar ($\sigma$) y el rango de valores (Min - Max) obtenidos para el MCC en cada arquitectura. Los resultados demuestran que las arquitecturas GNN no solo son mas precisas, sino significativamente mas estables. Los tres modelos de grafos mantuvieron un MCC promedio superior a 0.95 con desviaciones estándar inferiores a 0.002, indicando una alta consistencia en las predicciones independientemente de la inicialización aleatoria. Por el contrario, la CNN profunda mostro la mayor variabilidad con una desviación estándar de 0.009 y un rango amplio (0.8609 - 0.8833), reflejando una sensibilidad considerable a las condiciones iniciales del entrenamiento.
+
+\begin{table}[]\scriptsize
+\caption{Análisis de estabilidad de las arquitecturas de aprendizaje profundo mediante el Coeficiente de Correlación de Matthews (MCC). Se presentan la media ($\mu$), desviación estándar ($\sigma$) y el rango de valores (Min - Max) obtenidos en cinco corridas independientes. La interpretación cualitativa de la estabilidad se basa en la consistencia de los resultados, destacando la robustez de las arquitecturas basadas en grafos (GNN) en comparación con los enfoques espaciales (CNN) y secuenciales (RNN).}
+\label{tab:estabilidad}
+\centering
+\begin{tabular}{ccccc}
+\hline
+\textbf{Modelo} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}Media\\ ($\mu$)\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}Desv. est. \\ ($\sigma$)\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}Rango \\ (Min - Max)\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}Interpretacion de\\ estabilidad\end{tabular}} \\ \hline
+\textbf{GTN} &
+  0.9545 &
+  $\pm 0.002$ &
+  0.9520 - 0.9569 &
+  \begin{tabular}[c]{@{}c@{}}Alta Robustez.\\ Independencia de la \\ semilla aleatoria.\end{tabular} \\ \hline
+\textbf{GAT} &
+  0.9544 &
+  $\pm 0.0008$ &
+  0.9535 - 0.9555 &
+  \begin{tabular}[c]{@{}c@{}}Estabilidad máxima. \\ Desviación casi nula.\end{tabular} \\ \hline
+\textbf{GCN} &
+  0.9518 &
+  $\pm 0.001$ &
+  0.9495 - 0.9530 &
+  \begin{tabular}[c]{@{}c@{}}Convergencia consistente\\ y confiable.\end{tabular} \\ \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}GRU\\ bidireccional\end{tabular}} &
+  0.9432 &
+  $\pm 0.002$ &
+  0.9401 - 0.9470 &
+  \begin{tabular}[c]{@{}c@{}}Modelo no-gráfico\\  más estable.\end{tabular} \\ \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}LeNet-5\\ variante\end{tabular}} &
+  0.9256 &
+  $\pm 0.004$ &
+  0.9195 - 0.9297 &
+  \begin{tabular}[c]{@{}c@{}}Estabilidad moderada \\ con ligeras fluctuaciones.\end{tabular} \\ \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}LSTM\\ apilada\end{tabular}} &
+  0.8901 &
+  $\pm 0.005$ &
+  0.8855 - 0.8979 &
+  \begin{tabular}[c]{@{}c@{}}Dificultad para converger\\  en el mismo óptimo.\end{tabular} \\ \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}CNN\\ Profunda\end{tabular}} &
+  0.8708 &
+  $\pm 0.009$ &
+  0.8609 - 0.8833 &
+  \begin{tabular}[c]{@{}c@{}}Baja Estabilidad. \\ Alta sensibilidad a la\\  inicialización.\end{tabular} \\ \hline
+\end{tabular}
+\end{table}
+
+Adicionalmente, se examino la estabilidad en términos de Exactitud y Precisión (Tabla \ref{tab:estabilidad_acc_prec}). Los resultados corroboran las observaciones previas, con las arquitecturas GNN exhibiendo desviaciones estándar mínimas (inferiores a 0.2\%) en ambas métricas. En contraste, los modelos CNN y LSTM mostraron variabilidades significativamente mayores, especialmente en Precisión, donde la CNN profunda alcanzó una desviación estándar de 1.4\%. Estos hallazgos subrayan la superioridad de las arquitecturas basadas en grafos no solo en términos de rendimiento absoluto, sino también en la consistencia y confiabilidad de sus predicciones a través de múltiples ejecuciones.
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[] \scriptsize
+\caption{Análisis de estabilidad de las arquitecturas de aprendizaje profundo mediante Exactitud y Precisión. Se presentan los valores promedio y desviación estándar obtenidos en cinco corridas independientes para cada modelo. Los resultados destacan la consistencia de las arquitecturas basadas en grafos (GNN) en comparación con los enfoques espaciales (CNN) y secuenciales (RNN).}
+\label{tab:estabilidad_acc_prec}
+\centering
+\begin{tabular}{cccc}
+\hline
+\textbf{Enfoque}              & \textbf{Modelo}   & \textbf{Exactitud} & \textbf{Precisión} \\ \hline
+\multirow{2}{*}{Espacial (CNN)}   & LeNet-5 Variante & $92.89\% \pm 0.35$ & $91.90\% \pm 1.50$ \\ \cline{2-4} 
+                              & CNN Profunda      & $87.91\% \pm 0.85$ & $85.28\% \pm 1.40$ \\ \hline
+\multirow{2}{*}{Secuencial (RNN)} & LSTM Apilada     & $84.70\% \pm 2.30$ & $89.68\% \pm 0.45$ \\ \cline{2-4} 
+                              & GRU Bidireccional & $94.58\% \pm 0.25$ & $92.90\% \pm 0.80$ \\ \hline
+\multirow{3}{*}{Grafos (GNN)} & GCN               & $95.38\% \pm 0.12$ & $95.18\% \pm 0.25$ \\ \cline{2-4} 
+                              & GAT               & $95.64\% \pm 0.08$ & $94.74\% \pm 0.20$ \\ \cline{2-4} 
+                              & GTN               & $95.66\% \pm 0.18$ & $95.26\% \pm 0.28$ \\ \hline
+\end{tabular}
+\end{table}
 
 
 \section{Discusión}
-%%\label{}
+
+Los resultados evidencian las limitaciones estructurales de aplicar técnicas de visión por computadora y procesamiento de lenguaje natural a datos genómicos sin una adaptación topológica explicita. Las redes CNN basan su eficacia en la hipótesis de la localidad espacial. Sin embargo, al proyectar datos ómicos en una cuadricula artificial 2D ($53 \times 53$) mediante algoritmos de reordenamiento, se imponen relaciones de vecindad que no reflejan las interacciones biológicas reales entre genes. El hecho de que la CNN profunda  ($\mu_{MCC}=0.8708$) haya tenido un rendimiento inferior a la variante LeNet-5  ($\mu_{MCC}=0.9256$) confirma que la profundidad de la red, en lugar de extraer características más abstractas,  agravó el sobreajuste al ruido topológico introducido por la proyección espacial. Esto sugiere que las arquitecturas CNN pueden ser inapropiadas para datos ómicos a menos que se utilicen métodos avanzados de reordenamiento que preserven las relaciones biológicas.
+
+Por otro lado, al explorar el enfoque secuencial, surge el desafío de la dependencia a largo plazo. Si bien el genoma posee una estructura lineal, la regulación génica opera de forma multidimensional y no secuencial. Esta desconexión se manifestó en la LSTM apilada, la cual mostró dificultades significativas para converger, un fenómeno atribuible al desvanecimiento de gradientes en secuencias largas. No obstante, es notable que la GRU Bidireccional ($\mu_{MCC}=0.9432$) lograra mitigar está limitante. Al procesar la información simultáneamente en direcciones forward y backward, la arquitectura logró simular un contexto global, capturando interacciones distantes que resultaron superiores a cualquier aproximación basada en imágenes. Sin embargo, el elevado costo computacional y la persistente rigidez de la secuencia sugieren que, incluso con mecanismos bidireccionales, el enfoque secuencial sigue siendo insuficiente para modelar la naturaleza no euclidiana de las redes de interacción génica.
+
+La superioridad de las arquitecturas de grafos (GNN) destaca la importancia de incorporar explícitamente la topología biológica en el diseño del modelo. Los resultados mostraron que tanto la GCN (convolución espectral) como la GAT (mecanismo de atención) convergieron a rendimientos casi idénticos ($\mu_{MCC} \approx 0.95$). Esto sugiere un hallazgo interesante, el factor determinante del éxito no es la complejidad del mecanismo de propagación (atención vs. convolución), sino la fidelidad de la representación topológica. La construcción del grafo basada en la matriz de correlación de Pearson incorporo un conocimiento previo biológico, permitiendo a los modelos aprender patrones funcionales reales en lugar de inferir relaciones a partir de proyecciones artificiales. Al enfocarse directamente en genes funcionalmente co-regulados, independientemente de su posición lineal o espacial, las GNN logran capturar la esencia relacional de los datos multiómicos que los enfoques tradicionales ignoran.
+
+Finalmente, en el ámbito del diagnóstico oncológico asistido por computadora, la evaluación del rendimiento predictivo no puede regirse bajo la misma simetría métrica que otros problemas de clasificación. Existe una disparidad fundamental en el costo del error: un Falso Negativo (la omisión de un cáncer existente) conlleva consecuencias pronósticas irreversibles para el paciente, mientras que un Falso Positivo se mitiga mediante pruebas confirmatorias. Por consiguiente, la Sensibilidad (Recall) debe prevalecer sobre la exactitud global como el indicador primario de seguridad clínica.
+
+Bajo esta óptica crítica, el análisis revela una deficiencia preocupante en los modelos espaciales: la Deep CNN reportó una sensibilidad media del $81.34\%$, lo que se traduce en una Tasa de Falsos Negativos cercana al $18.66\%$. En un escenario hospitalario real, esto implica que casi uno de cada cinco pacientes con patología positiva no sería detectado durante el triaje. Por el contrario, la integración de grafos logró cerrar esta "brecha de seguridad". El modelo GTN (Graph Transformer Network) elevó la sensibilidad al $94.21\%$, reduciendo la tasa de error por omisión a menos del $6\%$. Esta capacidad para recuperar casos positivos sugiere que las redes de grafos capturan biomarcadores fenotípicos sutiles que los modelos euclidianos ignoran. En conclusión, las arquitecturas GNN se posicionan como los únicos candidatos tecnológicamente maduros para su integración en Sistemas de Soporte a la Decisión Clínica (CDSS), donde la prioridad absoluta es maximizar la detección temprana y garantizar la seguridad del paciente.
 
 \section{Conclusiones}
 %%\label{}

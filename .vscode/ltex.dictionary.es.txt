@@ -1,2 +1,5 @@
 convolucional
 ómicos
+sobreajuste
+LeNet
+multiómicos
