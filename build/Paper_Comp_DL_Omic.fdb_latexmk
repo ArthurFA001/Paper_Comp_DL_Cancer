@@ -1,16 +1,16 @@
 # Fdb version 4
-["bibtex build/main"] 1770185447.38351 "build/main.aux" "build/main.bbl" "build/main" 1770185469.87988 0
+["bibtex build/Paper_Comp_DL_Omic"] 1770186250.8842 "build/Paper_Comp_DL_Omic.aux" "build/Paper_Comp_DL_Omic.bbl" "build/Paper_Comp_DL_Omic" 1770186273.33792 0
   "./Blibliografia.bib" 1769544009.62738 9975 083bf2806a1a60aee2ff2cd6aa0733ba ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/elsarticle/elsarticle-num.bst" 1606256092 29462 43db4fe246825ec69ed81b2463c17f04 ""
-  "build/main.aux" 1770185469.66403 20069 ac723cf65bf252029c657615f0b42a3e "pdflatex"
+  "build/Paper_Comp_DL_Omic.aux" 1770186273.10499 20069 ac723cf65bf252029c657615f0b42a3e "pdflatex"
   (generated)
-  "build/main.bbl"
-  "build/main.blg"
+  "build/Paper_Comp_DL_Omic.bbl"
+  "build/Paper_Comp_DL_Omic.blg"
   (rewritten before read)
-["pdflatex"] 1770185447.44137 "/home/arthur1/Escritorio/Paper_Comp_DL_Cancer/main.tex" "build/main.pdf" "main" 1770185469.88038 0
+["pdflatex"] 1770186250.93543 "/home/arthur1/Escritorio/Paper_Comp_DL_Cancer/Paper_Comp_DL_Omic.tex" "build/Paper_Comp_DL_Omic.pdf" "Paper_Comp_DL_Omic" 1770186273.33864 0
   "/etc/texmf/web2c/texmf.cnf" 1748031927.46088 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/arthur1/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1769532844.91483 11524 9765a17d888c59549b536e891f27f62f ""
-  "/home/arthur1/Escritorio/Paper_Comp_DL_Cancer/main.tex" 1770185440.83633 64608 aadf60c1cce2b34aa01d6504af9609ab ""
+  "/home/arthur1/Escritorio/Paper_Comp_DL_Cancer/Paper_Comp_DL_Omic.tex" 1770186185.87608 64608 aadf60c1cce2b34aa01d6504af9609ab ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136768653 1616 371d1ee60c04b008c8fd760060cd34f1 ""
@@ -130,15 +130,15 @@
   "Imagenes/Muestras_TCGA.png" 1769532553.34356 189978 adcf2f13b6fb782d5e427bf273c7c5e0 ""
   "Imagenes/Proc_datos.png" 1769532553.34956 909736 a39fdef97635f260c911667cdfc188fd ""
   "Imagenes/muestrasxgenes.png" 1769532553.35356 510731 79ca0a709e6889517d4844426010f7c5 ""
-  "build/main.aux" 1770185469.66403 20069 ac723cf65bf252029c657615f0b42a3e "pdflatex"
-  "build/main.bbl" 1770185447.42411 6684 91a9d2732c2dfdbe57531cf2af59eacd "bibtex build/main"
-  "build/main.out" 1770185469.66603 5419 b13aee838149d8be76b2a5adf7f973bb "pdflatex"
-  "build/main.spl" 1770185447.67431 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1770185440.83633 64608 aadf60c1cce2b34aa01d6504af9609ab ""
+  "Paper_Comp_DL_Omic.tex" 1770186185.87608 64608 aadf60c1cce2b34aa01d6504af9609ab ""
+  "build/Paper_Comp_DL_Omic.aux" 1770186273.10499 20069 ac723cf65bf252029c657615f0b42a3e "pdflatex"
+  "build/Paper_Comp_DL_Omic.bbl" 1770186250.92108 6684 91a9d2732c2dfdbe57531cf2af59eacd "bibtex build/Paper_Comp_DL_Omic"
+  "build/Paper_Comp_DL_Omic.out" 1770186273.10699 5419 b13aee838149d8be76b2a5adf7f973bb "pdflatex"
+  "build/Paper_Comp_DL_Omic.spl" 1770186251.16926 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
-  "build/main.aux"
-  "build/main.log"
-  "build/main.out"
-  "build/main.pdf"
-  "build/main.spl"
+  "build/Paper_Comp_DL_Omic.aux"
+  "build/Paper_Comp_DL_Omic.log"
+  "build/Paper_Comp_DL_Omic.out"
+  "build/Paper_Comp_DL_Omic.pdf"
+  "build/Paper_Comp_DL_Omic.spl"
   (rewritten before read)

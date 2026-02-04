@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.27)  4 FEB 2026 00:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.27)  4 FEB 2026 00:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/arthur1/Escritorio/Paper_Comp_DL_Cancer/main.tex
-(/home/arthur1/Escritorio/Paper_Comp_DL_Cancer/main.tex
+**/home/arthur1/Escritorio/Paper_Comp_DL_Cancer/Paper_Comp_DL_Omic.tex
+(/home/arthur1/Escritorio/Paper_Comp_DL_Cancer/Paper_Comp_DL_Omic.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/elsarticle/elsarticle.cls
@@ -76,7 +76,7 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 \@enLab=\toks19
 \@sep=\skip50
 \@@sep=\skip51
- (build/main.spl) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+ (build/Paper_Comp_DL_Omic.spl) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip52
 \bibsep=\skip53
@@ -84,7 +84,7 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count269
 )
 \splwrite=\write3
-\openout3 = `main.spl'.
+\openout3 = `Paper_Comp_DL_Omic.spl'.
 
 \appnamewidth=\dimen147
 ) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathpazo.sty
@@ -281,8 +281,8 @@ LaTeX Info: Redefining \] on input line 2954.
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 63.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
-) (build/main.aux)
-\openout1 = `main.aux'.
+) (build/Paper_Comp_DL_Omic.aux)
+\openout1 = `Paper_Comp_DL_Omic.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
@@ -328,9 +328,9 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring OFF on input line 63.
- (build/main.out) (build/main.out)
+ (build/Paper_Comp_DL_Omic.out) (build/Paper_Comp_DL_Omic.out)
 \@outlinefile=\write4
-\openout4 = `main.out'.
+\openout4 = `Paper_Comp_DL_Omic.out'.
 
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 161.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
@@ -559,7 +559,7 @@ Overfull \hbox (9.96523pt too wide) in paragraph at lines 593--594
 \OT1/ppl/m/n/10 ex-is-tente) con-ll-eva con-se-cuen-cias pron[]osticas ir-re-versibles para el pa-ciente, mien-
  []
 
-[21] (build/main.bbl
+[21] (build/Paper_Comp_DL_Omic.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 13--15
 \OT1/ppl/m/n/10 URL []$\OT1/cmtt/m/n/10 https : / / www . cancer . gov / about-[]cancer / understanding /
  []
@@ -569,24 +569,24 @@ Underfull \hbox (badness 1436) in paragraph at lines 32--33
 []\OT1/ppl/m/n/10 M. Mas-simino, F. Mar-torana, S. Stella, S. R. Vi-tale, C. Tomar-chio,
  []
 
-[23] [24]) [25] (build/main.aux)
+[23] [24]) [25] (build/Paper_Comp_DL_Omic.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
+Package rerunfilecheck Info: File `Paper_Comp_DL_Omic.out' has not changed.
 (rerunfilecheck)             Checksum: B13AEE838149D8BE76B2A5ADF7F973BB;5419.
  ) 
 Here is how much of TeX's memory you used:
  11062 strings out of 476182
- 170080 string characters out of 5795595
+ 170486 string characters out of 5795595
  1945975 words of memory out of 5000000
  32773 multiletter control sequences out of 15000+600000
  591063 words of font info for 130 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,16n,79p,1746b,668s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,16n,79p,1760b,668s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/arthur1/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on build/main.pdf (25 pages, 4804729 bytes).
+Output written on build/Paper_Comp_DL_Omic.pdf (25 pages, 4804729 bytes).
 PDF statistics:
  430 PDF objects out of 1000 (max. 8388607)
  356 compressed objects within 4 object streams
