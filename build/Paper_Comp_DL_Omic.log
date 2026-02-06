@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.27)  4 FEB 2026 22:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.27)  4 FEB 2026 23:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -332,44 +332,44 @@ Package hyperref Info: Link coloring OFF on input line 63.
 \@outlinefile=\write4
 \openout4 = `Paper_Comp_DL_Omic.out'.
 
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 156.
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 158.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 156.
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 158.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 156.
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 158.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 156.
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 158.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 156.
+(Font)              scaled to size 10.42007pt on input line 158.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 156.
+(Font)              scaled to size 7.91925pt on input line 158.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 156.
+(Font)              scaled to size 6.25204pt on input line 158.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 156.
+(Font)              scaled to size 10.42007pt on input line 158.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 156.
+(Font)              scaled to size 7.91925pt on input line 158.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 156.
+(Font)              scaled to size 6.25204pt on input line 158.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 156.
+(Font)              scaled to size 8.33606pt on input line 158.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 156.
+(Font)              scaled to size 5.21004pt on input line 158.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 156.
+(Font)              scaled to size 8.33606pt on input line 158.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 156.
+(Font)              scaled to size 5.21004pt on input line 158.
 
-Overfull \hbox (17.20581pt too wide) in paragraph at lines 169--170
+Overfull \hbox (17.20581pt too wide) in paragraph at lines 171--172
 \OT1/ppl/m/n/10 crec-imiento celu-lar de-scon-tro-lado, im-pul-sado por una acu-mu-laci[]on de al-teraciones
  []
 
@@ -382,28 +382,28 @@ Overfull \hbox (1.90002pt too wide) has occurred while \output is active
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-Overfull \hbox (4.30621pt too wide) in paragraph at lines 173--174
+Overfull \hbox (4.30621pt too wide) in paragraph at lines 175--176
 \OT1/ppl/m/n/10 del c[]ancer, se ha pre-cisado la in-te-graci[]on de m[]ultiples con-jun-tos de datos []omicos
  []
 
 
-Overfull \hbox (10.71599pt too wide) in paragraph at lines 173--174
+Overfull \hbox (10.71599pt too wide) in paragraph at lines 175--176
 \OT1/ppl/m/n/10 gen-er-a-dos a par-tir de los mis-mos pa-cientes. El en-foque de in-te-graci[]on multi[]omica
  []
 
 
-Overfull \hbox (7.92577pt too wide) in paragraph at lines 173--174
+Overfull \hbox (7.92577pt too wide) in paragraph at lines 175--176
 \OT1/ppl/m/n/10 per-mite de-s-cubrir pa-trones biol[]ogicos m[]as com-ple-jos y obtener una com-prensi[]on
  []
 
 LaTeX Info: Symbol \textasciidieresis not provided by
             font family ppl in TS1 encoding.
-            Default family used instead on input line 175.
+            Default family used instead on input line 177.
 LaTeX Info: Symbol \textasciidieresis not provided by
             font family ppl in TS1 encoding.
-            Default family used instead on input line 175.
+            Default family used instead on input line 177.
 [2]
-Overfull \hbox (2.75613pt too wide) in paragraph at lines 186--187
+Overfull \hbox (2.75613pt too wide) in paragraph at lines 188--189
 \OT1/ppl/m/n/10 c[]ancer y mues-tras nor-males, uti-lizando un []unico con-junto de datos multi[]omicos
  []
 
@@ -411,24 +411,24 @@ Overfull \hbox (2.75613pt too wide) in paragraph at lines 186--187
 <Imagenes/Muestras_TCGA.png, id=165, 529.98pt x 270.465pt>
 File: Imagenes/Muestras_TCGA.png Graphic file (type png)
 <use Imagenes/Muestras_TCGA.png>
-Package pdftex.def Info: Imagenes/Muestras_TCGA.png  used on input line 200.
+Package pdftex.def Info: Imagenes/Muestras_TCGA.png  used on input line 202.
 (pdftex.def)             Requested size: 345.0pt x 176.06429pt.
 <Imagenes/muestrasxgenes.png, id=168, 805.92pt x 381.717pt>
 File: Imagenes/muestrasxgenes.png Graphic file (type png)
 <use Imagenes/muestrasxgenes.png>
-Package pdftex.def Info: Imagenes/muestrasxgenes.png  used on input line 210.
+Package pdftex.def Info: Imagenes/muestrasxgenes.png  used on input line 212.
 (pdftex.def)             Requested size: 345.0pt x 163.40704pt.
 <Imagenes/Proc_datos.png, id=169, 8674.4075pt x 3449.88875pt>
 File: Imagenes/Proc_datos.png Graphic file (type png)
 <use Imagenes/Proc_datos.png>
-Package pdftex.def Info: Imagenes/Proc_datos.png  used on input line 221.
+Package pdftex.def Info: Imagenes/Proc_datos.png  used on input line 223.
 (pdftex.def)             Requested size: 345.0pt x 137.18243pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4 <./Imagenes/Muestras_TCGA.png>] [5 <./Imagenes/muestrasxgenes.png> <./Imagenes/Proc_datos.png>] [6] [7]
-Overfull \hbox (12.14078pt too wide) in paragraph at lines 275--276
+Overfull \hbox (12.14078pt too wide) in paragraph at lines 277--278
 \OT1/ppl/m/n/10 de $\OML/zplm/m/it/10 N \OT1/zplm/m/n/10 =$ \OT1/ppl/m/n/10 2,794 car-ac-ter[]^^Psticas como una se-cuen-cia tem-po-ral $\OML/zplm/m/it/10 S[] \OT1/zplm/m/n/10 = \OMS/zplm/m/n/10 f\OML/zplm/m/it/10 f[]\OT1/ppl/m/n/10 , \OML/zplm/m/it/10 f[]\OT1/ppl/m/n/10 , ..., \OML/zplm/m/it/10 f[]\OMS/zplm/m/n/10 g$\OT1/ppl/m/n/10 .
  []
 
@@ -436,36 +436,36 @@ Overfull \hbox (12.14078pt too wide) in paragraph at lines 275--276
 <Imagenes/Modelo_LeNetMod.png, id=227, 8381.3125pt x 4601.19pt>
 File: Imagenes/Modelo_LeNetMod.png Graphic file (type png)
 <use Imagenes/Modelo_LeNetMod.png>
-Package pdftex.def Info: Imagenes/Modelo_LeNetMod.png  used on input line 314.
+Package pdftex.def Info: Imagenes/Modelo_LeNetMod.png  used on input line 316.
 (pdftex.def)             Requested size: 310.4979pt x 170.39583pt.
  [10 <./Imagenes/Modelo_LeNetMod.png>]
 <Imagenes/Modelo_CNN_Prof.png, id=237, 8807.90625pt x 4555.0175pt>
 File: Imagenes/Modelo_CNN_Prof.png Graphic file (type png)
 <use Imagenes/Modelo_CNN_Prof.png>
-Package pdftex.def Info: Imagenes/Modelo_CNN_Prof.png  used on input line 325.
+Package pdftex.def Info: Imagenes/Modelo_CNN_Prof.png  used on input line 327.
 (pdftex.def)             Requested size: 310.4979pt x 160.55396pt.
 <Imagenes/Modelo_RNN_Sec.png, id=239, 6709.065pt x 3729.935pt>
 File: Imagenes/Modelo_RNN_Sec.png Graphic file (type png)
 <use Imagenes/Modelo_RNN_Sec.png>
-Package pdftex.def Info: Imagenes/Modelo_RNN_Sec.png  used on input line 341.
+Package pdftex.def Info: Imagenes/Modelo_RNN_Sec.png  used on input line 343.
 (pdftex.def)             Requested size: 310.4979pt x 172.62062pt.
  [11 <./Imagenes/Modelo_CNN_Prof.png>]
 <Imagenes/Modelo_GRU_BI.png, id=246, 8494.73625pt x 4215.75pt>
 File: Imagenes/Modelo_GRU_BI.png Graphic file (type png)
 <use Imagenes/Modelo_GRU_BI.png>
-Package pdftex.def Info: Imagenes/Modelo_GRU_BI.png  used on input line 350.
+Package pdftex.def Info: Imagenes/Modelo_GRU_BI.png  used on input line 352.
 (pdftex.def)             Requested size: 310.4979pt x 154.06335pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (4.11554pt too wide) in paragraph at lines 355--356
+Overfull \hbox (4.11554pt too wide) in paragraph at lines 357--358
 \OT1/ppl/m/n/10 mi-ARN y meti-laci[]on), en vec-tores la-tentes de 512 di-men-siones me-di-ante proyec-
  []
 
 
-Overfull \hbox (21.27591pt too wide) in paragraph at lines 355--356
+Overfull \hbox (21.27591pt too wide) in paragraph at lines 357--358
 \OT1/ppl/m/n/10 ciones den-sas in-de-pen-di-entes (Lin-eal $\OMS/zplm/m/n/10 !$ \OT1/ppl/m/n/10 Batch Nor-mal-iza-tion $\OMS/zplm/m/n/10 !$ \OT1/ppl/m/n/10 ReLU $\OMS/zplm/m/n/10 !$ \OT1/ppl/m/n/10 Dropout).
  []
 
@@ -473,26 +473,26 @@ Overfull \hbox (21.27591pt too wide) in paragraph at lines 355--356
 <Imagenes/Modelo_GCN.png, id=255, 7001.15625pt x 3148.76375pt>
 File: Imagenes/Modelo_GCN.png Graphic file (type png)
 <use Imagenes/Modelo_GCN.png>
-Package pdftex.def Info: Imagenes/Modelo_GCN.png  used on input line 371.
+Package pdftex.def Info: Imagenes/Modelo_GCN.png  used on input line 373.
 (pdftex.def)             Requested size: 310.4979pt x 139.62227pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [13 <./Imagenes/Modelo_GRU_BI.png>]
-Overfull \hbox (0.1861pt too wide) in paragraph at lines 378--379
+Overfull \hbox (0.1861pt too wide) in paragraph at lines 380--381
 []\OT1/ppl/m/n/10 La GAT se im-ple-ment[]o con cu-a-tro ca-pas dise[]nadas con un es-quema de atenci[]on
  []
 
 
-Overfull \hbox (11.04672pt too wide) in paragraph at lines 378--379
+Overfull \hbox (11.04672pt too wide) in paragraph at lines 380--381
 \OT1/ppl/m/n/10 generando un in-ter-me-dio ma-sivo de 8,192 car-ac-ter[]^^Psticas por nodo. Para canalizar
  []
 
 <Imagenes/Modelo_GAT.png, id=264, 7043.31375pt x 3148.76375pt>
 File: Imagenes/Modelo_GAT.png Graphic file (type png)
 <use Imagenes/Modelo_GAT.png>
-Package pdftex.def Info: Imagenes/Modelo_GAT.png  used on input line 382.
+Package pdftex.def Info: Imagenes/Modelo_GAT.png  used on input line 384.
 (pdftex.def)             Requested size: 310.4979pt x 138.80548pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -501,66 +501,66 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Imagenes/Modelo_GTN.png, id=273, 7792.11125pt x 3148.76375pt>
 File: Imagenes/Modelo_GTN.png Graphic file (type png)
 <use Imagenes/Modelo_GTN.png>
-Package pdftex.def Info: Imagenes/Modelo_GTN.png  used on input line 395.
+Package pdftex.def Info: Imagenes/Modelo_GTN.png  used on input line 397.
 (pdftex.def)             Requested size: 310.4979pt x 125.44864pt.
 
-Overfull \hbox (3.06595pt too wide) in paragraph at lines 413--414
+Overfull \hbox (3.06595pt too wide) in paragraph at lines 415--416
 []\OT1/ppl/m/n/10 Todos los mod-e-los y ex-per-i-men-tos fueron im-ple-men-ta-dos uti-lizando el lenguaje
  []
 
 [15 <./Imagenes/Modelo_GAT.png> <./Imagenes/Modelo_GTN.png>]
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 415.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 417.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-Overfull \hbox (0.92612pt too wide) in paragraph at lines 427--428
+Overfull \hbox (0.92612pt too wide) in paragraph at lines 429--430
 \OT1/ppl/m/n/10 bien es una m[]etrica est[]andar para mon-i-torear la con-ver-gen-cia, su in-ter-pretaci[]on
  []
 
 [16] [17]
-LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 466.
+LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 468.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 )
-Overfull \hbox (3.25653pt too wide) in paragraph at lines 475--476
+Overfull \hbox (3.25653pt too wide) in paragraph at lines 477--478
 \OT1/ppl/m/n/10 men-tal m[]as rep-re-sen-ta-tiva. Los re-sul-ta-dos rev-e-lan una jer-arqu[]^^Pa de rendimiento
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 483.
+               Default added (so using `tbp') on input line 485.
 
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 487.
+(Font)              scaled to size 7.29405pt on input line 489.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 487.
+(Font)              scaled to size 7.29405pt on input line 489.
 
-Overfull \hbox (42.03506pt too wide) in paragraph at lines 500--501
+Overfull \hbox (42.03506pt too wide) in paragraph at lines 502--503
 \OT1/ppl/m/n/10 global com-pet-i-tivo, la topolog[]^^Pa de grafo pro-por-ciono un sesgo in-duc-tivo biol[]ogicamente
  []
 
 
-Overfull \hbox (7.49576pt too wide) in paragraph at lines 500--501
+Overfull \hbox (7.49576pt too wide) in paragraph at lines 502--503
 \OT1/ppl/m/n/10 su-pe-rior. Esta con-firma que mod-e-lar expl[]^^Pcitamente las in-ter-ac-ciones fun-cionales
  []
 
 [18]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 508.
+               Default added (so using `tbp') on input line 510.
 
 [19]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 562.
+               Default added (so using `tbp') on input line 564.
 
 
-Overfull \hbox (2.98628pt too wide) in paragraph at lines 582--583
+Overfull \hbox (2.98628pt too wide) in paragraph at lines 584--585
 \OT1/ppl/m/n/10 visi[]on por com-puta-dora y proce-samiento de lenguaje nat-u-ral a datos gen[]omicos
  []
 
 [20]
-Overfull \hbox (9.96523pt too wide) in paragraph at lines 588--589
+Overfull \hbox (9.96523pt too wide) in paragraph at lines 590--591
 \OT1/ppl/m/n/10 ex-is-tente) con-ll-eva con-se-cuen-cias pron[]osticas ir-re-versibles para el pa-ciente, mien-
  []
 
@@ -591,7 +591,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  72i,16n,79p,1760b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/arthur1/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on build/Paper_Comp_DL_Omic.pdf (24 pages, 4803640 bytes).
+Output written on build/Paper_Comp_DL_Omic.pdf (24 pages, 4803668 bytes).
 PDF statistics:
  415 PDF objects out of 1000 (max. 8388607)
  342 compressed objects within 4 object streams
