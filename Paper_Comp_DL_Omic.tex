@@ -17,8 +17,8 @@
 %% Template article for Elsevier's document class `elsarticle'
 %% with Harvard-style bibliographic references
 
-\documentclass[preprint,number]{elsarticle}
-%\usepackage[utf8]{inputenc}
+\documentclass[review,12pt,times,number]{elsarticle}
+\usepackage[utf8]{inputenc}
 \usepackage{mathpazo} %Tipo de letra
 \usepackage{parskip} %saltos de parrafo
 \usepackage{multirow}
@@ -56,6 +56,8 @@
 %% You might want to define your own abbreviated commands for common used terms, e.g.:
 %\newcommand{\kms}{km\,s$^{-1}$}
 %\newcommand{\msun}{$M_\odot$}
+%% Configuración de márgenes (ajustados para que no sean excesivos)
+\usepackage[margin=2.5cm]{geometry}
 
 \journal{Electronic Journal}
 
@@ -200,7 +202,7 @@ muestras de ARNm, 10,048 muestras de miARN y 8,696 muestras de metilación de AD
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{Imagenes/Muestras_TCGA.png}
-    \caption{Numero datos multiómicos total (ARNm, miARN y metilación de ADN) y su distribución por cada tipo muestra tumoral y normal, incluidos en el proyecto Pan-cáncer de los 31 tipos de cancer}
+    \caption{Número datos multiómicos total (ARNm, miARN y metilación de ADN) y su distribución por cada tipo muestra tumoral y normal, incluidos en el proyecto Pan-cáncer de los 31 tipos de cáncer y muestras normales.}
     \label{fig:muestras_TCGA}
 \end{figure}
 
@@ -216,7 +218,7 @@ Los datos en bruto obtenidos cuentan con características (genes) para cada dato
 
 \subsection{Preprocesamiento de datos}
 
-Los datos en bruto inicial, abarca decenas de miles de genes y sitios CpG, que contienen una gran cantidad de variables no informáticas o ruidosas. Para mitigar la alta dimensionalidad y mejorar la convergencia de los modelos de DL, se aplicó una estrategia de filtrado jerárquico.
+Los datos en bruto inicial, abarca decenas de miles de genes y sitios CpG, que contienen una gran cantidad de variables no informáticas o ruidosas. Para mitigar la alta dimensionalidad y mejorar la convergencia de los modelos de DL, se aplicó una estrategia de filtrado jerárquico. El preprocesamiento de datos se realizó la identificación de características biológicas relevantes y la reducción de dimensionalidad, para extraer características biológicas importantes de datos de alta dimensionalidad \cite{alharbi2025comparative}. Para la identificación biomarcadores que muestran diferencias significativas en los datos de ARNm y metilación se utilizó el análisis de expresión diferencial (DGE) y análisis de metilación diferencial con la herramienta LIMMA. El análisis DGE se utilizó con el paquete de R DESeq2, que consiste en modelar los datos de ARNm usando distribución binomial negativa, para identificar genes que presentan cambios significativos en los niveles de expresión génica \cite{robinson2010edger}. LIMMA se utilizó con el paquete en R, que asume que los datos siguen una distribución normal (Gaussiana) para identificar sitios CpG metilados diferencialmente significativos \cite{ritchie2015limma}. Posteriormente, LASSO fue aplicado en las características resultantes del análisis diferencial para extender la selección de características de los datos de ARNm y metilación de ADN y reducir las  \cite{tibshirani1996regression}, en la Figura \ref{fig:Proc_datos} se muestra en flujo del procesamiento de los datos.
 
 \begin{figure}[h]
     \centering
@@ -224,9 +226,6 @@ Los datos en bruto inicial, abarca decenas de miles de genes y sitios CpG, que c
     \caption{Número datos multiómicos total (ARNm, miARN y metilación de ADN) y su distribución por cada tipo muestra tumoral y normal, incluidos en el proyecto Pan-cáncer }
     \label{fig:Proc_datos}
 \end{figure}
-
-El preprocesamiento de datos en bruto se realizó la identificación de características biológicas relevantes y la reducción de dimensionalidad, para extraer características biológicas importantes de datos de alta dimensionalidad \cite{alharbi2025comparative}. Para la identificación biomarcadores que muestran diferencias significativas en los datos de ARNm y metilación se utilizó el análisis de expresión diferencial (DGE) y análisis de metilación diferencial con la herramienta LIMMA. El análisis DGE se utilizó con el paquete de R DESeq2, que consiste en modelar los datos de ARNm usando distribución binomial negativa, para identificar genes que presentan cambios significativos en los niveles de expresión génica \cite{robinson2010edger}. LIMMA se utilizó con el paquete en R, que asume que los datos siguen una distribución normal (Gaussiana) para identificar sitios CpG metilados diferencialmente significativos \cite{ritchie2015limma}. Posteriormente, LASSO fue aplicado en las características resultantes del análisis diferencial para extender la selección de características de los datos de ARNm y metilación de ADN y reducir las  \cite{tibshirani1996regression}, en la Figura \ref{fig:Proc_datos} se muestra en flujo del procesamiento de los datos.
-
 
 \subsubsection{Análisis de expresión génica diferencial (DGE)}
 
