@@ -3,3 +3,6 @@ convolucional
 sobreajuste
 LeNet
 multiómicos
+ómica
+multiómica
+ómicas
