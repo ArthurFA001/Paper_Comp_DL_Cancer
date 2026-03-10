@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.27)  19 FEB 2026 13:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.27)  6 MAR 2026 10:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -752,36 +752,32 @@ LaTeX Info: Symbol \textasciidieresis not provided by
             font family ppl in TS1 encoding.
             Default family used instead on input line 179.
  [2] [3] [4]
-<Imagenes/Muestras_TCGA.png, id=171, 529.98pt x 270.465pt>
+<Imagenes/Muestras_TCGA.png, id=170, 529.98pt x 270.465pt>
 File: Imagenes/Muestras_TCGA.png Graphic file (type png)
 <use Imagenes/Muestras_TCGA.png>
-Package pdftex.def Info: Imagenes/Muestras_TCGA.png  used on input line 204.
+Package pdftex.def Info: Imagenes/Muestras_TCGA.png  used on input line 206.
 (pdftex.def)             Requested size: 472.03123pt x 240.89467pt.
-<Imagenes/muestrasxgenes.png, id=174, 805.92pt x 381.717pt>
+<Imagenes/muestrasxgenes.png, id=173, 805.92pt x 381.717pt>
 File: Imagenes/muestrasxgenes.png Graphic file (type png)
 <use Imagenes/muestrasxgenes.png>
-Package pdftex.def Info: Imagenes/muestrasxgenes.png  used on input line 214.
+Package pdftex.def Info: Imagenes/muestrasxgenes.png  used on input line 216.
 (pdftex.def)             Requested size: 472.03123pt x 223.57439pt.
  [5 <./Imagenes/Muestras_TCGA.png>]
 <Imagenes/Proc_datos.png, id=188, 8674.4075pt x 3449.88875pt>
 File: Imagenes/Proc_datos.png Graphic file (type png)
 <use Imagenes/Proc_datos.png>
-Package pdftex.def Info: Imagenes/Proc_datos.png  used on input line 225.
+Package pdftex.def Info: Imagenes/Proc_datos.png  used on input line 227.
 (pdftex.def)             Requested size: 472.03123pt x 187.71779pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[6 <./Imagenes/muestrasxgenes.png>] [7 <./Imagenes/Proc_datos.png>] [8]
-Overfull \hbox (0.40384pt too wide) in paragraph at lines 272--273
+ [6 <./Imagenes/muestrasxgenes.png>] [7 <./Imagenes/Proc_datos.png>] [8] [9]
+Overfull \hbox (0.40384pt too wide) in paragraph at lines 274--275
 []\OT1/ppl/m/n/12 En la eval-u-aci[]on de los mod-e-los re-cur-rentes me-di-ante la in-te-graci[]on de datos multi[]omicos,
  []
 
-[9] [10] [11]
-<Imagenes/Modelo_LeNetMod.png, id=235, 8381.3125pt x 4601.19pt>
+[10] [11]
+<Imagenes/Modelo_LeNetMod.png, id=236, 8381.3125pt x 4601.19pt>
 File: Imagenes/Modelo_LeNetMod.png Graphic file (type png)
 <use Imagenes/Modelo_LeNetMod.png>
-Package pdftex.def Info: Imagenes/Modelo_LeNetMod.png  used on input line 315.
+Package pdftex.def Info: Imagenes/Modelo_LeNetMod.png  used on input line 317.
 (pdftex.def)             Requested size: 424.82523pt x 233.16214pt.
 
 
@@ -791,108 +787,107 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Imagenes/Modelo_CNN_Prof.png, id=245, 8807.90625pt x 4555.0175pt>
 File: Imagenes/Modelo_CNN_Prof.png Graphic file (type png)
 <use Imagenes/Modelo_CNN_Prof.png>
-Package pdftex.def Info: Imagenes/Modelo_CNN_Prof.png  used on input line 326.
+Package pdftex.def Info: Imagenes/Modelo_CNN_Prof.png  used on input line 328.
 (pdftex.def)             Requested size: 424.82523pt x 219.63226pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (11.68402pt too wide) in paragraph at lines 334--335
+Overfull \hbox (11.68402pt too wide) in paragraph at lines 336--337
 []\OT1/ppl/m/n/12 Para eval-uar la ca-paci-dad de los mod-e-los re-cur-rentes en la in-te-graci[]on de datos multi[]omicos,
  []
 
-[13 <./Imagenes/Modelo_LeNetMod.png>]
-<Imagenes/Modelo_RNN_Sec.png, id=254, 6709.065pt x 3729.935pt>
+[13 <./Imagenes/Modelo_LeNetMod.png>] [14 <./Imagenes/Modelo_CNN_Prof.png>]
+<Imagenes/Modelo_RNN_Sec.png, id=260, 6709.065pt x 3729.935pt>
 File: Imagenes/Modelo_RNN_Sec.png Graphic file (type png)
 <use Imagenes/Modelo_RNN_Sec.png>
-Package pdftex.def Info: Imagenes/Modelo_RNN_Sec.png  used on input line 342.
+Package pdftex.def Info: Imagenes/Modelo_RNN_Sec.png  used on input line 344.
 (pdftex.def)             Requested size: 424.82523pt x 236.13681pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Imagenes/Modelo_GRU_BI.png, id=255, 8494.73625pt x 4215.75pt>
+<Imagenes/Modelo_GRU_BI.png, id=261, 8494.73625pt x 4215.75pt>
 File: Imagenes/Modelo_GRU_BI.png Graphic file (type png)
 <use Imagenes/Modelo_GRU_BI.png>
-Package pdftex.def Info: Imagenes/Modelo_GRU_BI.png  used on input line 351.
+Package pdftex.def Info: Imagenes/Modelo_GRU_BI.png  used on input line 353.
 (pdftex.def)             Requested size: 424.82523pt x 210.79985pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14 <./Imagenes/Modelo_CNN_Prof.png>] [15 <./Imagenes/Modelo_RNN_Sec.png>] [16 <./Imagenes/Modelo_GRU_BI.png>]
+[15 <./Imagenes/Modelo_RNN_Sec.png>] [16 <./Imagenes/Modelo_GRU_BI.png>]
 <Imagenes/Modelo_GCN.png, id=275, 7001.15625pt x 3148.76375pt>
 File: Imagenes/Modelo_GCN.png Graphic file (type png)
 <use Imagenes/Modelo_GCN.png>
-Package pdftex.def Info: Imagenes/Modelo_GCN.png  used on input line 372.
+Package pdftex.def Info: Imagenes/Modelo_GCN.png  used on input line 374.
 (pdftex.def)             Requested size: 424.82523pt x 191.03171pt.
  [17 <./Imagenes/Modelo_GCN.png>]
 <Imagenes/Modelo_GAT.png, id=283, 7043.31375pt x 3148.76375pt>
 File: Imagenes/Modelo_GAT.png Graphic file (type png)
 <use Imagenes/Modelo_GAT.png>
-Package pdftex.def Info: Imagenes/Modelo_GAT.png  used on input line 383.
+Package pdftex.def Info: Imagenes/Modelo_GAT.png  used on input line 385.
 (pdftex.def)             Requested size: 424.82523pt x 189.8786pt.
-<Imagenes/Modelo_GTN.png, id=285, 7792.11125pt x 3148.76375pt>
+ [18 <./Imagenes/Modelo_GAT.png>]
+<Imagenes/Modelo_GTN.png, id=291, 7792.11125pt x 3148.76375pt>
 File: Imagenes/Modelo_GTN.png Graphic file (type png)
 <use Imagenes/Modelo_GTN.png>
-Package pdftex.def Info: Imagenes/Modelo_GTN.png  used on input line 396.
+Package pdftex.def Info: Imagenes/Modelo_GTN.png  used on input line 398.
 (pdftex.def)             Requested size: 424.82523pt x 171.66908pt.
- [18 <./Imagenes/Modelo_GAT.png>]
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 416.
+ [19 <./Imagenes/Modelo_GTN.png>]
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 418.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [19 <./Imagenes/Modelo_GTN.png>]
-Overfull \hbox (15.1155pt too wide) in paragraph at lines 424--425
+)
+Overfull \hbox (15.1155pt too wide) in paragraph at lines 426--427
 \OT1/ppl/m/n/12 global. Por con-sigu-iente, se adopt[]o un en-foque mul-ti-di-men-sional alin-eado con los est[]andares
  []
 
 
-Overfull \hbox (2.21573pt too wide) in paragraph at lines 424--425
+Overfull \hbox (2.21573pt too wide) in paragraph at lines 426--427
 \OT1/ppl/m/n/12 de la lit-er-atura en apren-dizaje pro-fundo cl[]^^Pnico [[]], pri-or-izando m[]etricas que cuan-tifiquen
  []
 
 [20] [21]
-LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 467.
+LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 469.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 ) [22]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 484.
+               Default added (so using `tbp') on input line 488.
 
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 488.
+(Font)              scaled to size 8.33606pt on input line 492.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 488.
+(Font)              scaled to size 5.21004pt on input line 492.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 488.
+(Font)              scaled to size 8.33606pt on input line 492.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 488.
+(Font)              scaled to size 5.21004pt on input line 492.
 [23]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 509.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 563.
+               Default added (so using `tbp') on input line 513.
 
 [24] [25]
-Overfull \hbox (3.8117pt too wide) in paragraph at lines 587--588
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 567.
+
+[26]
+Overfull \hbox (3.8117pt too wide) in paragraph at lines 591--592
 \OT1/ppl/m/n/12 rar expl[]^^Pcitamente la topolog[]^^Pa biol[]ogica en el dise[]no del mod-elo. Los re-sul-ta-dos mostraron
  []
 
 
-Overfull \hbox (9.65604pt too wide) in paragraph at lines 587--588
+Overfull \hbox (9.65604pt too wide) in paragraph at lines 591--592
 \OT1/ppl/m/n/12 strucci[]on del grafo basada en la ma-triz de cor-relaci[]on de Pear-son in-cor-poro un conocimiento
  []
 
-[26] (build/Paper_Comp_DL_Omic.bbl [27] [28]
+[27] (build/Paper_Comp_DL_Omic.bbl [28] [29]
 Underfull \hbox (badness 1253) in paragraph at lines 56--57
 []\OT1/ppl/m/n/12 R. Parthasarathy, A. Bhowmik, A novel re-cur-rent neu-ral net-work frame-work
  []
 
-[29] [30]) [31] (build/Paper_Comp_DL_Omic.aux)
+[30]) [31] (build/Paper_Comp_DL_Omic.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -901,18 +896,18 @@ Package rerunfilecheck Info: File `Paper_Comp_DL_Omic.out' has not changed.
 (rerunfilecheck)             Checksum: A885FCBFA6381DC1704FAC7F021A1835;5157.
  ) 
 Here is how much of TeX's memory you used:
- 12302 strings out of 476182
- 187105 string characters out of 5795595
- 1941975 words of memory out of 5000000
- 33973 multiletter control sequences out of 15000+600000
- 607378 words of font info for 181 fonts, out of 8000000 for 9000
+ 12305 strings out of 476182
+ 187134 string characters out of 5795595
+ 1938975 words of memory out of 5000000
+ 33974 multiletter control sequences out of 15000+600000
+ 608481 words of font info for 183 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,16n,79p,1760b,662s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/arthur1/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on build/Paper_Comp_DL_Omic.pdf (31 pages, 4802047 bytes).
+ 72i,16n,79p,1760b,634s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/arthur1/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on build/Paper_Comp_DL_Omic.pdf (31 pages, 4815933 bytes).
 PDF statistics:
- 450 PDF objects out of 1000 (max. 8388607)
- 368 compressed objects within 4 object streams
+ 455 PDF objects out of 1000 (max. 8388607)
+ 371 compressed objects within 4 object streams
  106 named destinations out of 1000 (max. 500000)
  251 words of extra memory for PDF output out of 10000 (max. 10000000)
 

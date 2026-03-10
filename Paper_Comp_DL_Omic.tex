@@ -189,7 +189,9 @@ Las Redes Neuronales de Grafos (GNN) son una opción que ofrece una ventaja conc
 %Si bien existen trabajos que aplican modelos CNN, RNN o GNN de forma aislada para clasificación de tipos cáncer, se cuenta con limitada información en cuanto una comparación sistemática y directa de estas tres arquitecturas bajo un mismo conjunto de datos multiómicos y una misma tarea de clasificación multiclase (31 tipos de cáncer y muestras normales).
 El objetivo de este trabajo es hacer una comparación del rendimiento de las arquitecturas CNN, RNN y GNN en una tarea de clasificación de 31 tipos de cáncer y muestras normales, utilizando un único conjunto de datos multiómicos integrados, que fueron preprocesados con un análisis de DGE/CpG para selección de genes relevantes, y selección y reducción de características mediante LASSO, la estrategia de representación de los datos fue de matriz de 2D para los modelos CNN, vector de 1D para el modelo RNN y grafo de correlación para los modelos GNN.
 
+\textbf{\textit{falta estado del arte respecto al trabajo concreto, relacionado a lo que estoy haciendo, articulos que estan haciendo directamente lo que estoy haciendo}}
 
+\textbf{\textit{Tambien eliminar las subsecciones y poner los titulos integrados en los parrafos, para que no se vea tan fragmentado, y se vea mas fluida la lectura.}}
 \section{Metodología}
 %%\label{}
 
@@ -231,7 +233,7 @@ Los datos en bruto inicial, abarca decenas de miles de genes y sitios CpG, que c
 
 El Análisis de Expresión Diferencial (DGE) es una metodología fundamental en genómica para comparar los niveles de expresión génica bajo diferentes condiciones biológicas (ej. tratamiento vs. control, o tejido normal vs. tejido tumoral). Esta herramienta permite identificar y caracterizar los genes que modifican su actividad entre la condición de referencia y la experimental.
 
-Dado que los datos de secuenciación (ARNm) presentan una naturaleza de conteo discreto y exhiben sobredispersión, se utilizó el paquete DESeq2. Este método proporciona un marco estadístico robusto basado en Modelos Lineales Generalizados (GLM) que asumen una distribución binomial negativa para los conteos de lecturas. La evaluación de la significancia estadística de los cambios en la expresión entre muestras de tejido normal y muestras de tejido tumoral se realizó mediante la prueba de Wald. Para el criterio de selección, se definieron como diferencialmente expresados únicamente aquellos genes que cumplieron con una significancia estadística estricta, definida por un umbral de valor p ajustado (FDR) < 0.001.
+Dado que los datos de secuenciación (ARNm) presentan una naturaleza de conteo discreto y exhiben sobredispersión, se utilizó el paquete DESeq2. (\textit{poner que hace el paquete y despues poner entre parentesis, indicando que se usó el paquete DESeq2}) Este método proporciona un marco estadístico robusto basado en Modelos Lineales Generalizados (GLM) que asumen una distribución binomial negativa para los conteos de lecturas. La evaluación de la significancia estadística de los cambios en la expresión entre muestras de tejido normal y muestras de tejido tumoral se realizó mediante la prueba de Wald. Para el criterio de selección, se definieron como diferencialmente expresados únicamente aquellos genes que cumplieron con una significancia estadística estricta, definida por un umbral de valor p ajustado (FDR) $<$ 0.001.
 
 \subsubsection{Análisis de metilación diferencial}
 
@@ -472,6 +474,8 @@ Finalmente, se generaron matrices de confusión ($C \in \mathbb{R}^{32 \times 32
 Es este capítulo se presenta el análisis del desempeño de las siete arquitecturas de aprendizaje profundo evaluadas: dos basadas en representaciones espaciales (CNN), dos secuenciales (RNN) y tres en topología de grafos (GNN). Para garantizar la validez estadística de los resultados y mitigar el efecto de la inicialización estocástica de los pesos, el diseño experimental consistió en cinco corridas independientes (n=5) para cada modelo, manteniendo constantes los hiperparámetros y la partición estratificada de los datos.
 
 \subsection{Comparativa global de rendimiento}
+
+\textit{Poner las graficas con un mismo orden de acomodo, en la primer grafica mejor poner que sean 5 corridas en vez de ser solo una}
 
 La Tabla \ref{tab:global_performance} resume las métricas de evaluación obtenidas en la corrida experimental más representativa. Los resultados revelan una jerarquía de rendimiento clara definida por la estrategia de datos, donde los modelos basados en grafos superan consistentemente a los enfoques secuenciales y espaciales.
 

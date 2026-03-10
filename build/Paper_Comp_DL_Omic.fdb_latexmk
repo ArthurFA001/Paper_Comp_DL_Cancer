@@ -1,20 +1,22 @@
 # Fdb version 4
-["bibtex build/Paper_Comp_DL_Omic"] 1771530596.13509 "build/Paper_Comp_DL_Omic.aux" "build/Paper_Comp_DL_Omic.bbl" "build/Paper_Comp_DL_Omic" 1771530616.07756 0
+["bibtex build/Paper_Comp_DL_Omic"] 1772748565.28444 "build/Paper_Comp_DL_Omic.aux" "build/Paper_Comp_DL_Omic.bbl" "build/Paper_Comp_DL_Omic" 1772816003.26455 0
   "./Blibliografia.bib" 1769544009.62738 9975 083bf2806a1a60aee2ff2cd6aa0733ba ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/elsarticle/elsarticle-num.bst" 1606256092 29462 43db4fe246825ec69ed81b2463c17f04 ""
-  "build/Paper_Comp_DL_Omic.aux" 1771530615.81652 19845 40f66e24aeb7c51808e1af870090774f "pdflatex"
+  "build/Paper_Comp_DL_Omic.aux" 1772816003.01729 19846 c26a11d25087f067deab4adfddbf34b5 "pdflatex"
   (generated)
   "build/Paper_Comp_DL_Omic.bbl"
   "build/Paper_Comp_DL_Omic.blg"
   (rewritten before read)
-["pdflatex"] 1771530596.18329 "/home/arthur1/Escritorio/Paper_Comp_DL_Cancer/Paper_Comp_DL_Omic.tex" "build/Paper_Comp_DL_Omic.pdf" "Paper_Comp_DL_Omic" 1771530616.07817 0
+["pdflatex"] 1772815980.73918 "/home/arthur1/Escritorio/Paper_Comp_DL_Cancer/Paper_Comp_DL_Omic.tex" "build/Paper_Comp_DL_Omic.pdf" "Paper_Comp_DL_Omic" 1772816003.26498 0
   "/etc/texmf/web2c/texmf.cnf" 1748031927.46088 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/arthur1/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk" 1770399975.99325 14040 b793afa43666fe18e2911a4324e340cc ""
-  "/home/arthur1/Escritorio/Paper_Comp_DL_Cancer/Paper_Comp_DL_Omic.tex" 1771530501.24691 64532 acf8bad7b9df96f104307305b753eb43 ""
+  "/home/arthur1/Escritorio/Paper_Comp_DL_Cancer/Paper_Comp_DL_Omic.tex" 1772815980.35958 65120 2b43e16bb10e16381fbc2b3a76aa0f66 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136768653 1616 371d1ee60c04b008c8fd760060cd34f1 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm" 1136768653 2532 9ad73cf4dd2173a847f2a5f5608e0b9a ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplbi7t.tfm" 1136768653 1816 bb70e8d3600ea56abb211fdcc6909bf3 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplbi8r.tfm" 1136768653 2788 e071e05f6ae1a90dbbbc13a193c3a135 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm" 1136768653 1804 7b5f73028f6509167f47ace9d69509ed ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr8c.tfm" 1136768653 1348 0e8eb69b4437626c0f6c9bed4a4e373c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm" 1136768653 2796 d37c29814a6717720ee1a7c9a0b2c3b8 ""
@@ -50,9 +52,11 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb" 1136849748 15213 d999bbe8bd9c8f231f3f66a737c76478 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb" 1136849748 27693 bfb340b71292c6ead561e4943433945d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb" 1136849748 52406 dad2f72863a03727d5f536c64a69c452 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb" 1136849748 51285 96e6ac8305d3a03d04d7ee3879e2710e ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb" 1136849748 52665 661b1e6b26edb5f50dd491f8a701cb57 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb" 1136849748 50022 90249cba7e3e4e9845f80328d6f9bd13 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplb7t.vf" 1136768653 1380 798ef26de8f0a21f37c9b1147f4fe5d8 ""
+  "/usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplbi7t.vf" 1136768653 1388 a313cf7cb3917eab429671fbba73c499 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplr7t.vf" 1136768653 1380 037725697594405988999f61172f52de ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplr8c.vf" 1136768653 3504 f65f653e1ad318a9d01b4af15300683a ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplri7t.vf" 1136768653 1376 a5f9301e24d8e27c2286a3b415778d2d ""
@@ -146,11 +150,11 @@
   "Imagenes/Muestras_TCGA.png" 1769532553.34356 189978 adcf2f13b6fb782d5e427bf273c7c5e0 ""
   "Imagenes/Proc_datos.png" 1769532553.34956 909736 a39fdef97635f260c911667cdfc188fd ""
   "Imagenes/muestrasxgenes.png" 1769532553.35356 510731 79ca0a709e6889517d4844426010f7c5 ""
-  "Paper_Comp_DL_Omic.tex" 1771530501.24691 64532 acf8bad7b9df96f104307305b753eb43 ""
-  "build/Paper_Comp_DL_Omic.aux" 1771530615.81652 19845 40f66e24aeb7c51808e1af870090774f "pdflatex"
-  "build/Paper_Comp_DL_Omic.bbl" 1771530596.16676 6684 91a9d2732c2dfdbe57531cf2af59eacd "bibtex build/Paper_Comp_DL_Omic"
-  "build/Paper_Comp_DL_Omic.out" 1771530615.81852 5157 a885fcbfa6381dc1704fac7f021a1835 "pdflatex"
-  "build/Paper_Comp_DL_Omic.spl" 1771530596.41676 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Paper_Comp_DL_Omic.tex" 1772815980.35958 65120 2b43e16bb10e16381fbc2b3a76aa0f66 ""
+  "build/Paper_Comp_DL_Omic.aux" 1772816003.01729 19846 c26a11d25087f067deab4adfddbf34b5 "pdflatex"
+  "build/Paper_Comp_DL_Omic.bbl" 1772748565.33231 6684 91a9d2732c2dfdbe57531cf2af59eacd "bibtex build/Paper_Comp_DL_Omic"
+  "build/Paper_Comp_DL_Omic.out" 1772816003.01929 5157 a885fcbfa6381dc1704fac7f021a1835 "pdflatex"
+  "build/Paper_Comp_DL_Omic.spl" 1772815980.97557 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "build/Paper_Comp_DL_Omic.aux"
   "build/Paper_Comp_DL_Omic.log"

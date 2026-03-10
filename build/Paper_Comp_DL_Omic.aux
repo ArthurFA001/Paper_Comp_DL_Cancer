@@ -24,37 +24,37 @@
 \citation{jiang2019semi,velickovic2017graph}
 \citation{weinstein2013cancer}
 \citation{colaprico2016tcgabiolinks}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Metodología}{4}{section.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Recopilación de datos}{4}{subsection.2.1}\protected@file@percent }
 \citation{alharbi2025comparative}
 \citation{robinson2010edger}
 \citation{ritchie2015limma}
 \citation{tibshirani1996regression}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Metodología}{5}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Recopilación de datos}{5}{subsection.2.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Número datos multiómicos total (ARNm, miARN y metilación de ADN) y su distribución por cada tipo muestra tumoral y normal, incluidos en el proyecto Pan-cáncer de los 31 tipos de cáncer y muestras normales.}}{5}{figure.1}\protected@file@percent }
 \newlabel{fig:muestras_TCGA}{{1}{5}{Número datos multiómicos total (ARNm, miARN y metilación de ADN) y su distribución por cada tipo muestra tumoral y normal, incluidos en el proyecto Pan-cáncer de los 31 tipos de cáncer y muestras normales}{figure.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Preprocesamiento de datos}{5}{subsection.2.2}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Número datos multiómicos total (ARNm, miARN y metilación de ADN) y su distribución por cada tipo muestra tumoral y normal, incluidos en el proyecto Pan-cáncer }}{6}{figure.2}\protected@file@percent }
 \newlabel{fig:muestrasxgenes}{{2}{6}{Número datos multiómicos total (ARNm, miARN y metilación de ADN) y su distribución por cada tipo muestra tumoral y normal, incluidos en el proyecto Pan-cáncer}{figure.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Análisis de expresión génica diferencial (DGE)}{6}{subsubsection.2.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Preprocesamiento de datos}{6}{subsection.2.2}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Número datos multiómicos total (ARNm, miARN y metilación de ADN) y su distribución por cada tipo muestra tumoral y normal, incluidos en el proyecto Pan-cáncer }}{7}{figure.3}\protected@file@percent }
 \newlabel{fig:Proc_datos}{{3}{7}{Número datos multiómicos total (ARNm, miARN y metilación de ADN) y su distribución por cada tipo muestra tumoral y normal, incluidos en el proyecto Pan-cáncer}{figure.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Análisis de metilación diferencial}{7}{subsubsection.2.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Análisis de expresión génica diferencial (DGE)}{7}{subsubsection.2.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Análisis de metilación diferencial}{8}{subsubsection.2.2.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}LASSO}{8}{subsubsection.2.2.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4}Integración y construcción de matriz multiómica}{9}{subsubsection.2.2.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Estructuración de datos para modelos de aprendizaje profundo}{9}{subsection.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Estructuración espacial 2D (CNN)}{9}{subsubsection.2.3.1}\protected@file@percent }
-\citation{jeon2025investigating,fabbri2010epigenetics}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Estructuración espacial 2D (CNN)}{10}{subsubsection.2.3.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Estructuración secuencial (RNN)}{10}{subsubsection.2.3.2}\protected@file@percent }
+\citation{jeon2025investigating,fabbri2010epigenetics}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.3}Estructuración basada en grafos (GNN)}{11}{subsubsection.2.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Arquitecturas de los modelos de aprendizaje profundo}{11}{subsection.2.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Modelos convolucionales}{11}{subsubsection.2.4.1}\protected@file@percent }
 \citation{lecun2002gradient}
 \citation{chuang2021convolutional}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Arquitecturas de los modelos de aprendizaje profundo}{12}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Modelos convolucionales}{12}{subsubsection.2.4.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Adaptación de la arquitectura LeNet-5. Esquema de la red convolucional jerárquica que ilustra la transición desde la matriz de entrada ($53 \times 53$) hacia la extracción de características mediante dos bloques de filtros ($6 \times 5 \times 5$ y $16 \times 5 \times 5$). El diagrama detalla la integración de Average Pooling ($2 \times 2$) y la fase de aplanamiento (Flatten) previa a un clasificador denso de cuatro capas ($1000 \rightarrow 500 \rightarrow 120 \rightarrow 84$) con activaciones tanh, culminando en la capa Softmax para la clasificación de los 32 subtipos tumorales.}}{13}{figure.4}\protected@file@percent }
 \newlabel{fig:LeNetMod}{{4}{13}{Adaptación de la arquitectura LeNet-5. Esquema de la red convolucional jerárquica que ilustra la transición desde la matriz de entrada ($53 \times 53$) hacia la extracción de características mediante dos bloques de filtros ($6 \times 5 \times 5$ y $16 \times 5 \times 5$). El diagrama detalla la integración de Average Pooling ($2 \times 2$) y la fase de aplanamiento (Flatten) previa a un clasificador denso de cuatro capas ($1000 \rightarrow 500 \rightarrow 120 \rightarrow 84$) con activaciones tanh, culminando en la capa Softmax para la clasificación de los 32 subtipos tumorales}{figure.4}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}modelos RNN}{13}{subsubsection.2.4.2}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Arquitectura de modelo CNN profunda. Esquema basado en la propuesta de Chuang et al. para la captura de patrones no lineales. El diagrama ilustra tres bloques de extracción de características con filtros de $64$ y reducción mediante Max-Pooling ($2 \times 2$), transitando desde kernels de $5 \times 5$ hacia $3 \times 3$. Se detalla el proceso de aplanamiento (Flatten) y la transición hacia un clasificador profundo de tres capas densas ($1000 \rightarrow 600 \rightarrow 80$) para la distinción de los 32 subtipos tumorales mediante una capa final Softmax.}}{14}{figure.5}\protected@file@percent }
 \newlabel{fig:CNN_prof}{{5}{14}{Arquitectura de modelo CNN profunda. Esquema basado en la propuesta de Chuang et al. para la captura de patrones no lineales. El diagrama ilustra tres bloques de extracción de características con filtros de $64$ y reducción mediante Max-Pooling ($2 \times 2$), transitando desde kernels de $5 \times 5$ hacia $3 \times 3$. Se detalla el proceso de aplanamiento (Flatten) y la transición hacia un clasificador profundo de tres capas densas ($1000 \rightarrow 600 \rightarrow 80$) para la distinción de los 32 subtipos tumorales mediante una capa final Softmax}{figure.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}modelos RNN}{14}{subsubsection.2.4.2}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Arquitectura de modelo LSTM apilado. Esquema del modelo de procesamiento secuencial para el vector de $2,794$ características. El diagrama ilustra la etapa de extracción recurrente mediante dos capas LSTM ($128$ y $64$ unidades) para la generación de un vector de contexto global. Se detalla el clasificador profundo compuesto por cuatro capas densas ($1000 \rightarrow 500 \rightarrow 200 \rightarrow 60$) con activación tanh, culminando en la capa de salida Softmax para la clasificación de los 32 tipos tumorales.}}{15}{figure.6}\protected@file@percent }
 \newlabel{fig:RNN_sec}{{6}{15}{Arquitectura de modelo LSTM apilado. Esquema del modelo de procesamiento secuencial para el vector de $2,794$ características. El diagrama ilustra la etapa de extracción recurrente mediante dos capas LSTM ($128$ y $64$ unidades) para la generación de un vector de contexto global. Se detalla el clasificador profundo compuesto por cuatro capas densas ($1000 \rightarrow 500 \rightarrow 200 \rightarrow 60$) con activación tanh, culminando en la capa de salida Softmax para la clasificación de los 32 tipos tumorales}{figure.6}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Arquitectura de modelo RNN jerárquico. Esquema del modelo basado en el flujo de regulación biológica. Se ilustra la proyección lineal independiente de las tres modalidades ($393$ Metilación, $1,881$ miARN, $393$ ARNm) hacia subespacios latentes de $512$ dimensiones. El diagrama detalla la construcción de la secuencia apilada ($T=3$) y su procesamiento mediante una red recurrente bidireccional de dos capas ($256$ unidades), finalizando en un clasificador profundo de $128$ neuronas para la distinción de los 32 subtipos tumorales.}}{16}{figure.7}\protected@file@percent }
@@ -67,21 +67,21 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Arquitectura Graph Transformer (GTN). Diagrama del flujo de atención mediante bloques \textit  {TransformerConv} ($80 \times 6$ cabezales). A diferencia de los modelos piramidales, esta red mantiene una densidad constante de 480 dimensiones para el refinamiento de características globales. Se detalla la transición desde la entrada ($N=2,794$) hasta la salida de 32 clases, integrando Dropout de 0.5 y activaciones LeakyReLU.}}{19}{figure.10}\protected@file@percent }
 \newlabel{fig:Modelo_GTN}{{10}{19}{Arquitectura Graph Transformer (GTN). Diagrama del flujo de atención mediante bloques \textit {TransformerConv} ($80 \times 6$ cabezales). A diferencia de los modelos piramidales, esta red mantiene una densidad constante de 480 dimensiones para el refinamiento de características globales. Se detalla la transición desde la entrada ($N=2,794$) hasta la salida de 32 clases, integrando Dropout de 0.5 y activaciones LeakyReLU}{figure.10}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Configuración experimental y métricas de evaluación}{19}{subsection.2.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.6.1}Entorno de hardware y software}{19}{subsubsection.2.6.1}\protected@file@percent }
 \citation{grandini2020metrics}
 \citation{johnson2019survey}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.6.1}Entorno de hardware y software}{20}{subsubsection.2.6.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.6.2}Partición de Datos y Protocolo}{20}{subsubsection.2.6.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.6.3}Métricas de evaluación}{20}{subsubsection.2.6.3}\protected@file@percent }
 \citation{gorodkin2004comparing}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Resultados}{22}{section.3}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Comparativa de rendimiento entre arquitecturas de aprendizaje profundo para la clasificación multiclase de tipos de cáncer utilizando datos multiómicos integrados. Se presentan las métricas clave: Coeficiente de Correlación de Matthews (MCC), Exactitud, Precisión, Sensibilidad (Recall), F1-Score y Tiempo de entrenamiento. Los resultados destacan la superioridad de las arquitecturas basadas en grafos (GNN) en comparación con los enfoques espaciales (CNN) y secuenciales (RNN).}}{23}{table.1}\protected@file@percent }
 \newlabel{tab:global_performance}{{1}{23}{Comparativa de rendimiento entre arquitecturas de aprendizaje profundo para la clasificación multiclase de tipos de cáncer utilizando datos multiómicos integrados. Se presentan las métricas clave: Coeficiente de Correlación de Matthews (MCC), Exactitud, Precisión, Sensibilidad (Recall), F1-Score y Tiempo de entrenamiento. Los resultados destacan la superioridad de las arquitecturas basadas en grafos (GNN) en comparación con los enfoques espaciales (CNN) y secuenciales (RNN)}{table.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Resultados}{23}{section.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Comparativa global de rendimiento}{23}{subsection.3.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Analisis de estabilidad}{24}{subsection.3.2}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Análisis de estabilidad de las arquitecturas de aprendizaje profundo mediante el Coeficiente de Correlación de Matthews (MCC). Se presentan la media ($\mu $), desviación estándar ($\sigma $) y el rango de valores (Min - Max) obtenidos en cinco corridas independientes. La interpretación cualitativa de la estabilidad se basa en la consistencia de los resultados, destacando la robustez de las arquitecturas basadas en grafos (GNN) en comparación con los enfoques espaciales (CNN) y secuenciales (RNN).}}{25}{table.2}\protected@file@percent }
 \newlabel{tab:estabilidad}{{2}{25}{Análisis de estabilidad de las arquitecturas de aprendizaje profundo mediante el Coeficiente de Correlación de Matthews (MCC). Se presentan la media ($\mu $), desviación estándar ($\sigma $) y el rango de valores (Min - Max) obtenidos en cinco corridas independientes. La interpretación cualitativa de la estabilidad se basa en la consistencia de los resultados, destacando la robustez de las arquitecturas basadas en grafos (GNN) en comparación con los enfoques espaciales (CNN) y secuenciales (RNN)}{table.2}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Análisis de estabilidad de las arquitecturas de aprendizaje profundo mediante Exactitud y Precisión. Se presentan los valores promedio y desviación estándar obtenidos en cinco corridas independientes para cada modelo. Los resultados destacan la consistencia de las arquitecturas basadas en grafos (GNN) en comparación con los enfoques espaciales (CNN) y secuenciales (RNN).}}{25}{table.3}\protected@file@percent }
-\newlabel{tab:estabilidad_acc_prec}{{3}{25}{Análisis de estabilidad de las arquitecturas de aprendizaje profundo mediante Exactitud y Precisión. Se presentan los valores promedio y desviación estándar obtenidos en cinco corridas independientes para cada modelo. Los resultados destacan la consistencia de las arquitecturas basadas en grafos (GNN) en comparación con los enfoques espaciales (CNN) y secuenciales (RNN)}{table.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Análisis de estabilidad de las arquitecturas de aprendizaje profundo mediante Exactitud y Precisión. Se presentan los valores promedio y desviación estándar obtenidos en cinco corridas independientes para cada modelo. Los resultados destacan la consistencia de las arquitecturas basadas en grafos (GNN) en comparación con los enfoques espaciales (CNN) y secuenciales (RNN).}}{26}{table.3}\protected@file@percent }
+\newlabel{tab:estabilidad_acc_prec}{{3}{26}{Análisis de estabilidad de las arquitecturas de aprendizaje profundo mediante Exactitud y Precisión. Se presentan los valores promedio y desviación estándar obtenidos en cinco corridas independientes para cada modelo. Los resultados destacan la consistencia de las arquitecturas basadas en grafos (GNN) en comparación con los enfoques espaciales (CNN) y secuenciales (RNN)}{table.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Discusión}{26}{section.4}\protected@file@percent }
 \bibstyle{elsarticle-num}
 \bibdata{Blibliografia}
@@ -89,14 +89,14 @@
 \bibcite{NCI_CancerStats_2025_online}{{2}{}{{}}{{}}}
 \bibcite{siegel2023cancer}{{3}{}{{}}{{}}}
 \bibcite{dizon2024cancer}{{4}{}{{}}{{}}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusiones}{28}{section.5}\protected@file@percent }
+\@writefile{toc}{\let\numberline\tmptocnumberline}
 \bibcite{hanahan2011hallmarks}{{5}{}{{}}{{}}}
 \bibcite{zhuang2021multi}{{6}{}{{}}{{}}}
 \bibcite{acharya2024comprehensive}{{7}{}{{}}{{}}}
 \bibcite{massimino2023single}{{8}{}{{}}{{}}}
 \bibcite{hernandez2024methods}{{9}{}{{}}{{}}}
 \bibcite{kutlay2021integrative}{{10}{}{{}}{{}}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusiones}{28}{section.5}\protected@file@percent }
-\@writefile{toc}{\let\numberline\tmptocnumberline}
 \bibcite{libbrecht2015machine}{{11}{}{{}}{{}}}
 \bibcite{lecun2015deep}{{12}{}{{}}{{}}}
 \bibcite{sartori2025comprehensive}{{13}{}{{}}{{}}}
